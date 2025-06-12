@@ -5,5 +5,8 @@ module nicolasorteg.gestion1daw {
 
 
     opens nicolasorteg.gestion1daw to javafx.fxml;
+    opens nicolasorteg.gestion1daw.controllers to javafx.fxml;
+
     exports nicolasorteg.gestion1daw;
+    exports nicolasorteg.gestion1daw.controllers to javafx.fxml;
 }
