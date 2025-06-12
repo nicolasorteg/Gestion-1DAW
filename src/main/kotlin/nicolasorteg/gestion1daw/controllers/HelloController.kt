@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw
+package nicolasorteg.gestion1daw.controllers
 
 import javafx.fxml.FXML
 import javafx.scene.control.Label
