@@ -3,6 +3,7 @@ module nicolasorteg.gestion1daw {
     requires javafx.fxml;
     requires kotlin.stdlib;
     requires kotlin.result.jvm;
+    requires logging.jvm;
 
 
     opens nicolasorteg.gestion1daw to javafx.fxml;
