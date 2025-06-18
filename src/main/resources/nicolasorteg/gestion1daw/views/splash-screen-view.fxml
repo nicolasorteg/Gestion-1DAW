@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="530.0" prefWidth="780.0" style="-fx-background-color: #00953d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nicolasorteg.gestion1daw.controllers.SplashScreenController">
+
+    <!-- Imagen de fondo ocupa toda la ventana -->
+    <ImageView fx:id="backgroundImage" fitHeight="530.0" fitWidth="780.0" preserveRatio="false"
+               AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        <Image url="@../media/fondo-pizarra.jpg" />
+    </ImageView>
+
+    <!-- StackPane ocupa toda la ventana -->
+    <StackPane AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+
+        <!-- VBox centra verticalmente ProgressBar y Label, con espacio entre ellos -->
+        <VBox alignment="CENTER" spacing="10">
+            <ProgressBar fx:id="progressBar" prefWidth="400" prefHeight="30" progress="0" />
+            <Label fx:id="mensajeCarga" style="-fx-font-size: 16px;" textFill="WHITE" />
+        </VBox>
+
+    </StackPane>
+</AnchorPane>
