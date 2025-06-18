@@ -1,20 +1,28 @@
 package nicolasorteg.gestion1daw
 
 import javafx.application.Application
-import javafx.fxml.FXMLLoader
-import javafx.scene.Scene
 import javafx.stage.Stage
+import nicolasorteg.gestion1daw.routes.RoutesManager
 
-class HelloApplication : Application() {
-    override fun start(stage: Stage) {
-        val fxmlLoader = FXMLLoader(HelloApplication::class.java.getResource("hello-view.fxml"))
-        val scene = Scene(fxmlLoader.load(), 320.0, 240.0)
-        stage.title = "Hello!"
-        stage.scene = scene
-        stage.show()
+class MainApp : Application() {
+
+    override fun start(primaryStage: Stage) {
+        RoutesManager.apply {
+            app = this@MainApp
+        }.run {
+            initSplashStage(primaryStage)
+        }
+    }
+
+    override fun stop() {
+        println("On Application Stop")
+    }
+
+    override fun init() {
+        println("On Application Init")
     }
 }
 
 fun main() {
-    Application.launch(HelloApplication::class.java)
+    Application.launch(MainApp::class.java)
 }
