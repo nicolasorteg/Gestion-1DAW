@@ -1,12 +1,15 @@
 package nicolasorteg.gestion1daw.controllers
 
 import javafx.fxml.FXML
-import javafx.stage.Stage
 import nicolasorteg.gestion1daw.routes.RoutesManager
+import nicolasorteg.gestion1daw.viewmodels.PantallaInicialViewModel
 
 class PantallaInicialController {
+
+    private val viewModel = PantallaInicialViewModel()
+
     @FXML
     private fun onAcercaDeClicked() {
-        RoutesManager.initAcercaDeStage(RoutesManager.activeStage)
+        viewModel.openAcercaDe(RoutesManager.activeStage)
     }
 }
