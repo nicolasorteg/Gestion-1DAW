@@ -22,7 +22,7 @@ object RoutesManager {
     enum class Vistas(val path: String) {
         SPLASH("views/splash-screen-view.fxml"),
         REGISTER("views/register-view.fxml"),
-        PANTALLA_INICIAL("views/pantalla-inicial-view.fxml"),
+        PANTALLA_INICIAL("views/pantalla-principal-view.fxml"),
         ACERCA_DE("views/acerca-de-view.fxml")
     }
 
@@ -78,7 +78,7 @@ object RoutesManager {
         val stage = Stage()
 
         stage.title = "Acerca de"
-        stage.scene = Scene(root, 540.0, 400.0)
+        stage.scene = Scene(root, 390.0, 310.0)
         stage.initOwner(owner)
         stage.isResizable = false
         stage.icons.add(Image(getResourceAsStream("media/app-icon.png")))
