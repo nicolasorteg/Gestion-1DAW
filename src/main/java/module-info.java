@@ -7,6 +7,7 @@ module nicolasorteg.gestion1daw {
     // Logger
     requires logging.jvm;
     requires org.slf4j;
+    requires java.desktop;
 
 
     opens nicolasorteg.gestion1daw to javafx.fxml;
