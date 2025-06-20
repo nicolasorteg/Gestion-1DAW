@@ -1,5 +1,8 @@
 package nicolasorteg.gestion1daw.alumno.models
 
+import nicolasorteg.gestion1daw.expediente.model.Expediente
+import nicolasorteg.gestion1daw.modulo.model.Modulo
+
 /**
  * Aquí se guardan los datos/atributos de Alumno, que hereda de Persona.
  */
@@ -12,13 +15,14 @@ class Alumno(
     edad: Int,
     nacionalidad: String,
     val fechaIncorporacion: String,
-    val modulos: String,
+    val modulos: List<Modulo>,
+    val expediente: Expediente,
     val notaMedia: Double,
     val faltas: Int,
     val retrasos: Int,
     val partes: Int,
 
-): Persona(
+    ): Persona(
     id,
     nombre,
     apellidos,
