@@ -18,7 +18,7 @@
         </image>
     </ImageView>
 
-    <MenuBar AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    <MenuBar style="-fx-background-color: #c49850;" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <menus>
             <Menu text="Archivo">
                 <items>
@@ -26,7 +26,12 @@
                     <MenuItem text="Exportar alumnos"/>
                 </items>
             </Menu>
-            <Menu text="Acerca De" onAction="#onAcercaDeClicked"/>
+            <Menu text="Acerca De">
+                <items>
+                    <MenuItem text="Acerca De" onAction="#onAcercaDeClicked"/>
+                </items>
+            </Menu>
+
         </menus>
     </MenuBar>
 
