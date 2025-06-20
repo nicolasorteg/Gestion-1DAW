@@ -26,6 +26,8 @@ class Alumno(
     edad,
     nacionalidad
 ) {
+
+    // CONCAT
     val nombreCompleto: String
         get() = "$nombre $apellidos"
 
