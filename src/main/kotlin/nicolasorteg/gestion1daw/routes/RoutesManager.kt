@@ -21,7 +21,9 @@ object RoutesManager {
 
     enum class Vistas(val path: String) {
         SPLASH("views/splash-screen-view.fxml"),
-        REGISTER("views/inicio-sesion-view.fxml"),
+        REGISTER("views/register-view.fxml"),
+        PANTALLA_INICIAL("views/pantalla-inicial-view.fxml"),
+        ACERCA_DE("views/acerca-de-view.fxml")
     }
 
     fun initSplashStage(stage: Stage) {
@@ -43,16 +45,44 @@ object RoutesManager {
         logger.debug { "Iniciando register stage" }
         val fxmlLoader = FXMLLoader(getResource(Vistas.REGISTER.path))
         val parentRoot = fxmlLoader.load<Pane>()
-        val scene = Scene(parentRoot, 400.0, 650.0)
+        val myScene = Scene(parentRoot, 778.0, 530.0)
         stage.title = "Registro"
         stage.isResizable = false
         stage.icons.add(Image(getResourceAsStream("media/app-icon.png")))
-        stage.scene = scene
+        stage.scene = myScene
         stage.centerOnScreen()
         stage.setOnCloseRequest {  }
         mainStage = stage
         _activeStage = stage
         mainStage.show()
+    }
+
+    fun initPantallaInicialStage(stage: Stage) {
+        logger.debug { "Iniciando pantalla principal" }
+        val fxmlLoader = FXMLLoader(getResource(Vistas.PANTALLA_INICIAL.path))
+        val parentRoot = fxmlLoader.load<Pane>()
+        val scene = Scene(parentRoot, 1000.0, 700.0)
+        stage.title = "Pantalla Principal"
+        stage.scene = scene
+        stage.centerOnScreen()
+        stage.icons.add(Image(getResourceAsStream("media/app-icon.png")))
+        stage.isResizable = false
+        _activeStage = stage
+        mainStage = stage
+        stage.show()
+    }
+
+    fun initAcercaDeStage(owner: Stage) {
+        val fxmlLoader = FXMLLoader(getResource(Vistas.ACERCA_DE.path))
+        val root = fxmlLoader.load<Pane>()
+        val stage = Stage()
+
+        stage.title = "Acerca de"
+        stage.scene = Scene(root, 540.0, 400.0)
+        stage.initOwner(owner)
+        stage.isResizable = false
+        stage.icons.add(Image(getResourceAsStream("media/app-icon.png")))
+        stage.show()
     }
 
     fun getResource(resource: String): URL {
