@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw.alumno.mappers
+package nicolasorteg.gestion1daw.alumno.mapper
 
 import nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity
 import nicolasorteg.gestion1daw.alumno.dto.AlumnoDto
@@ -11,7 +11,7 @@ import nicolasorteg.gestion1daw.modulo.mapper.toEntity
 import nicolasorteg.gestion1daw.modulo.mapper.toModel
 
 /**
- * Convierte un Alumno a su DTO.
+ * Convierte un Alumno (modelo) a AlumnoDto.
  */
 fun Alumno.toDto(): AlumnoDto {
     return AlumnoDto(
@@ -24,6 +24,7 @@ fun Alumno.toDto(): AlumnoDto {
         fechaIncorporacion = this.fechaIncorporacion,
         modulos = this.modulos.map { it.toDto() },
         expediente = this.expediente.toDto(),
+        notaMedia = this.notaMedia,
         faltas = this.faltas,
         retrasos = this.retrasos,
         partes = this.partes
@@ -31,7 +32,7 @@ fun Alumno.toDto(): AlumnoDto {
 }
 
 /**
- * Convierte un AlumnoEntity a su DTO.
+ * Convierte un AlumnoEntity a AlumnoDto.
  */
 fun AlumnoEntity.toDto(): AlumnoDto {
     return AlumnoDto(
@@ -44,6 +45,7 @@ fun AlumnoEntity.toDto(): AlumnoDto {
         fechaIncorporacion = this.fechaIncorporacion,
         modulos = this.modulos.map { it.toDto() },
         expediente = this.expediente.toDto(),
+        notaMedia = this.notaMedia,
         faltas = this.faltas,
         retrasos = this.retrasos,
         partes = this.partes
@@ -51,7 +53,7 @@ fun AlumnoEntity.toDto(): AlumnoDto {
 }
 
 /**
- * Convierte un AlumnoDto a su Model.
+ * Convierte un AlumnoDto a Alumno (modelo).
  */
 fun AlumnoDto.toModel(): Alumno {
     return Alumno(
@@ -64,7 +66,7 @@ fun AlumnoDto.toModel(): Alumno {
         fechaIncorporacion = this.fechaIncorporacion,
         modulos = this.modulos.map { it.toModel() },
         expediente = this.expediente.toModel(),
-        notaMedia = this.expediente.notaMedia,
+        notaMedia = this.notaMedia ?: 0.0,
         faltas = this.faltas,
         retrasos = this.retrasos,
         partes = this.partes
@@ -72,7 +74,7 @@ fun AlumnoDto.toModel(): Alumno {
 }
 
 /**
- * Convierte un AlumnoEntity a su Model.
+ * Convierte un AlumnoEntity a Alumno (modelo).
  */
 fun AlumnoEntity.toModel(): Alumno {
     return Alumno(
@@ -93,7 +95,7 @@ fun AlumnoEntity.toModel(): Alumno {
 }
 
 /**
- * Convierte un Alumno a su Entity.
+ * Convierte un Alumno (modelo) a AlumnoEntity.
  */
 fun Alumno.toEntity(): AlumnoEntity {
     return AlumnoEntity(
@@ -114,7 +116,7 @@ fun Alumno.toEntity(): AlumnoEntity {
 }
 
 /**
- * Convierte un AlumnoDto a su Entity.
+ * Convierte un AlumnoDto a AlumnoEntity.
  */
 fun AlumnoDto.toEntity(): AlumnoEntity {
     return AlumnoEntity(
@@ -127,7 +129,7 @@ fun AlumnoDto.toEntity(): AlumnoEntity {
         fechaIncorporacion = this.fechaIncorporacion,
         modulos = this.modulos.map { it.toEntity() },
         expediente = this.expediente.toEntity(),
-        notaMedia = this.expediente.notaMedia,
+        notaMedia = this.notaMedia ?: 0.0,
         faltas = this.faltas,
         retrasos = this.retrasos,
         partes = this.partes
