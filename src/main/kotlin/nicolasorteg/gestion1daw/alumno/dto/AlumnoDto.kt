@@ -13,6 +13,7 @@ data class AlumnoDto(
     val fechaIncorporacion: String,
     val modulos: List<ModuloDto>,
     val expediente: ExpedienteDto,
+    val notaMedia: Double,
     val faltas: Int,
     val retrasos: Int,
     val partes: Int
