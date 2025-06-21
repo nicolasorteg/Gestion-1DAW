@@ -8,6 +8,9 @@ module nicolasorteg.gestion1daw {
     requires logging.jvm;
     requires org.slf4j;
     requires java.desktop;
+    requires org.jdbi.v3.sqlobject.kotlin;
+    requires org.jdbi.v3.sqlobject;
+    requires org.jdbi.v3.core;
 
 
     opens nicolasorteg.gestion1daw to javafx.fxml;
