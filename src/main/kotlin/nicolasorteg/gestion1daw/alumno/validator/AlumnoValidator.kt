@@ -47,10 +47,6 @@ class AlumnoValidator: Validator<Alumno, PersonaError> {
             return Err(PersonaError.PersonaValidatorError("La fecha de incorporación no puede estar en blanco."))
         }
 
-        if (t.modulos.isBlank()) {
-            return Err(PersonaError.PersonaValidatorError("Los módulos no pueden estar en blanco."))
-        }
-
         if (t.notaMedia < 0.0 || t.notaMedia > 10.0) {
             return Err(PersonaError.PersonaValidatorError("La nota debe estar entre 0-10."))
         }
