@@ -2,9 +2,9 @@ package alumno.mapper
 
 import nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity
 import nicolasorteg.gestion1daw.alumno.dto.AlumnoDto
-import nicolasorteg.gestion1daw.alumno.mapper.toDto
-import nicolasorteg.gestion1daw.alumno.mapper.toEntity
-import nicolasorteg.gestion1daw.alumno.mapper.toModel
+import nicolasorteg.gestion1daw.alumno.mappers.toDto
+import nicolasorteg.gestion1daw.alumno.mappers.toEntity
+import nicolasorteg.gestion1daw.alumno.mappers.toModel
 import nicolasorteg.gestion1daw.alumno.models.Alumno
 import nicolasorteg.gestion1daw.modulo.dao.ModuloEntity
 import nicolasorteg.gestion1daw.modulo.dto.ModuloDto
