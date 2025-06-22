@@ -1,38 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="nicolasorteg.gestion1daw.controllers.PantallaInicialController" prefWidth="1000.0" prefHeight="700.0">
+<AnchorPane prefHeight="632.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nicolasorteg.gestion1daw.controllers.PantallaInicialController">
 
-    <!-- Imagen de fondo -->
-    <ImageView fx:id="backgroundImage" fitWidth="1000.0" fitHeight="700.0" preserveRatio="false"
-               AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
-               AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+       <!-- Imagen de fondo -->
+    <ImageView fx:id="backgroundImage" fitHeight="633.0" fitWidth="1008.0" layoutX="-4.8" layoutY="1.0" preserveRatio="false" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
         <image>
-            <Image url="@../media/fondo-pizarra.jpg"/>
+            <Image url="@../media/fondo-pizarra.jpg" />
         </image>
     </ImageView>
 
-    <MenuBar style="-fx-background-color: #c49850;" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    <!-- Barra de menú -->
+    <MenuBar style="-fx-background-color: #c49850;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
             <Menu text="Archivo">
                 <items>
-                    <MenuItem text="Importar alumnos"/>
-                    <MenuItem text="Exportar alumnos"/>
+                    <MenuItem onAction="#onImportarAlumnosClicked" text="Importar alumnos" />
+                    <MenuItem text="Exportar alumnos" />
                 </items>
             </Menu>
             <Menu text="Acerca De">
                 <items>
-                    <MenuItem text="Acerca De" onAction="#onAcercaDeClicked"/>
+                    <MenuItem onAction="#onAcercaDeClicked" text="Acerca De" />
                 </items>
             </Menu>
-
         </menus>
     </MenuBar>
+
+    <!-- Tabla de alumnos -->
+    <TableView fx:id="tablaAlumnos" layoutX="33.0" layoutY="92.0" prefHeight="550.0" prefWidth="523.0" AnchorPane.bottomAnchor="181.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="448.0" AnchorPane.topAnchor="92.0">
+
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="32.79998856782913" text="ID" />
+            <TableColumn fx:id="colNombre" prefWidth="77.60000228881836" text="Nombre" />
+            <TableColumn fx:id="colApellidos" prefWidth="92.0" text="Apellidos" />
+            <TableColumn fx:id="colEdad" prefWidth="35.2000732421875" text="Edad" />
+            <TableColumn fx:id="colNotaMedia" prefWidth="77.59999084472656" text="Nota Media" />
+            <TableColumn fx:id="colFechaNacimiento" prefWidth="112.0" text="Fecha Nacimiento" />
+            <TableColumn fx:id="colNacionalidad" prefWidth="94.39996337890625" text="Nacionalidad" />
+            <TableColumn fx:id="colFechaIncorporacion" prefWidth="124.800048828125" text="Fecha Incorporación" />
+            <TableColumn fx:id="colFaltas" prefWidth="52.79998779296875" text="Faltas" />
+            <TableColumn fx:id="colRetrasos" prefWidth="73.60003662109375" text="Retrasos" />
+            <TableColumn fx:id="colPartes" prefWidth="70.4000244140625" text="Partes" />
+
+        </columns>
+    </TableView>
+   <Text fill="WHITE" layoutX="33.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado de alumnos:" wrappingWidth="277.33669662475586">
+      <font>
+         <Font name="System Bold" size="26.0" />
+      </font>
+   </Text>
+    <!-- Formulario de detalles de alumno -->
+    <AnchorPane layoutX="630.0" layoutY="92.0" prefWidth="360.0" AnchorPane.bottomAnchor="180.79999999999995" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="92.0">
+
+        <!-- Nombre -->
+        <Label layoutY="5.0" text="Nombre:" textFill="white">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="inputNombre" layoutX="109.0" layoutY="1.0" prefWidth="200" />
+
+        <!-- Apellidos -->
+        <Label layoutY="45.0" text="Apellidos:" textFill="white">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="inputApellidos" layoutX="109.0" layoutY="41.0" prefWidth="200" />
+
+        <!-- Edad -->
+        <Label layoutY="85.0" text="Edad:" textFill="white">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="inputEdad" layoutX="109.0" layoutY="81.0" prefWidth="200" />
+
+        <!-- Fecha incorporación -->
+        <Label layoutY="205.0" text="Fecha Incorporación:" textFill="white">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="inputFechaIncorporacion" layoutX="158.0" layoutY="201.0" prefWidth="150" />
+
+        <!-- Nota media -->
+        <Label layoutY="245.0" text="Nota media:" textFill="white">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="inputNotaMedia" layoutX="109.0" layoutY="241.0" prefWidth="200" />
+
+        <!-- Fecha nacimiento -->
+        <Label layoutX="0" layoutY="125.0" text="Fecha Nacimiento:" textFill="white">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="inputFechaNacimiento" layoutX="158.0" layoutY="121.0" prefWidth="150" />
+
+        <!-- Nacionalidad -->
+        <Label layoutY="165.0" text="Nacionalidad:" textFill="white">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="inputNacionalidad" layoutX="109.0" layoutY="161.0" prefWidth="200" />
+   
+        <!-- Faltas -->
+        <Label layoutY="285.0" text="Faltas:" textFill="white">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+   
+        <!-- Retrasos -->
+        <Label layoutY="325.0" text="Retrasos:" textFill="white">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+   
+        <!-- Partes -->
+        <Label layoutY="365.0" text="Partes:" textFill="white">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="inputFaltas" layoutX="109.0" layoutY="281.0" prefWidth="200" />
+        <TextField fx:id="inputRetrasos" layoutX="109.0" layoutY="321.0" prefWidth="200" />
+        <TextField fx:id="inputPartes" layoutX="109.0" layoutY="361.0" prefWidth="200" />
+   
+   
+        <!-- Botón para guardar cambios -->
+        <Button fx:id="btnGuardarCambios" layoutX="180.0" layoutY="403.0" onAction="#onGuardarCambiosClicked" prefHeight="26.0" prefWidth="127.0" text="Guardar cambios" />
+    </AnchorPane>
+
+     <Text fill="WHITE" layoutX="630.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalles del alumno:">
+         <font>
+             <Font name="System Bold" size="26.0" />
+         </font>
+     </Text>
 
 </AnchorPane>
