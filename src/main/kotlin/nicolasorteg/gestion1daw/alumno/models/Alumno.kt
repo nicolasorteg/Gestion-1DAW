@@ -14,13 +14,13 @@ class Alumno(
     fechaNacimiento: String,
     edad: Int,
     nacionalidad: String,
-    val fechaIncorporacion: String,
+    var fechaIncorporacion: String,
     val modulos: List<Modulo>,
     val expediente: Expediente,
-    val notaMedia: Double,
-    val faltas: Int,
-    val retrasos: Int,
-    val partes: Int,
+    var notaMedia: Double,
+    var faltas: Int,
+    var retrasos: Int,
+    var partes: Int,
 
     ): Persona(
     id,

@@ -5,9 +5,9 @@ package nicolasorteg.gestion1daw.alumno.models
  */
 abstract class Persona(
     val id: Int,
-    val nombre: String,
-    val apellidos: String,
-    val fechaNacimiento: String,
-    val edad: Int,
-    val nacionalidad: String,
+    var nombre: String,
+    var apellidos: String,
+    var fechaNacimiento: String,
+    var edad: Int,
+    var nacionalidad: String,
 )
