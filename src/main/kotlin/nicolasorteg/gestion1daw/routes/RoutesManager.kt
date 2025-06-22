@@ -61,7 +61,7 @@ object RoutesManager {
         logger.debug { "Iniciando pantalla principal" }
         val fxmlLoader = FXMLLoader(getResource(Vistas.PANTALLA_INICIAL.path))
         val parentRoot = fxmlLoader.load<Pane>()
-        val scene = Scene(parentRoot, 1000.0, 700.0)
+        val scene = Scene(parentRoot, 1000.0, 631.0)
         stage.title = "Pantalla Principal"
         stage.scene = scene
         stage.centerOnScreen()
