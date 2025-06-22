@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw.viewmodels
+package nicolasorteg.gestion1daw.common.viewmodels
 
 import javafx.application.Platform
 import javafx.beans.property.SimpleDoubleProperty

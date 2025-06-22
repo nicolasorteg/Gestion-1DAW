@@ -1,11 +1,11 @@
-package nicolasorteg.gestion1daw.controllers
+package nicolasorteg.gestion1daw.common.controllers
 
 import javafx.fxml.FXML
 import javafx.scene.control.*
 import javafx.stage.FileChooser
 import nicolasorteg.gestion1daw.alumno.models.Alumno
 import nicolasorteg.gestion1daw.routes.RoutesManager
-import nicolasorteg.gestion1daw.viewmodels.PantallaInicialViewModel
+import nicolasorteg.gestion1daw.common.viewmodels.PantallaInicialViewModel
 import java.io.File
 
 class PantallaInicialController {

@@ -1,8 +1,8 @@
-package nicolasorteg.gestion1daw.controllers
+package nicolasorteg.gestion1daw.common.controllers
 
 import javafx.fxml.FXML
 import javafx.scene.input.MouseEvent
-import nicolasorteg.gestion1daw.viewmodels.AcercaDeViewModel
+import nicolasorteg.gestion1daw.common.viewmodels.AcercaDeViewModel
 
 class AcercaDeController {
 

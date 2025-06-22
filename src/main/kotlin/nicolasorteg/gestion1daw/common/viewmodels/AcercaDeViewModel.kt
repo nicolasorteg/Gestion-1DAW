@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw.viewmodels
+package nicolasorteg.gestion1daw.common.viewmodels
 
 import java.awt.Desktop
 import java.net.URI

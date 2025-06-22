@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/src/main/resources/nicolasorteg/gestion1daw/data.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/kotlin/nicolasorteg/gestion1daw/alumno/dao/AlumnoDao.kt" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/nicolasorteg/gestion1daw/data.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/nicolasorteg/gestion1daw/tables.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/data.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/tables.sql" dialect="H2" />
   </component>
 </project>

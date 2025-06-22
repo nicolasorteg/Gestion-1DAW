@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw.controllers
+package nicolasorteg.gestion1daw.common.controllers
 
 import javafx.fxml.FXML
 import javafx.scene.control.PasswordField
@@ -7,7 +7,7 @@ import javafx.scene.control.Alert
 import javafx.scene.control.Alert.AlertType
 import javafx.stage.Stage
 import nicolasorteg.gestion1daw.routes.RoutesManager
-import nicolasorteg.gestion1daw.viewmodels.RegisterViewModel
+import nicolasorteg.gestion1daw.common.viewmodels.RegisterViewModel
 import org.lighthousegames.logging.logging
 
 class RegisterController {

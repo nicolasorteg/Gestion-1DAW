@@ -1,11 +1,11 @@
-package nicolasorteg.gestion1daw.controllers
+package nicolasorteg.gestion1daw.common.controllers
 
 import javafx.fxml.FXML
 import javafx.scene.control.Label
 import javafx.scene.control.ProgressBar
 import javafx.stage.Stage
 import nicolasorteg.gestion1daw.routes.RoutesManager
-import nicolasorteg.gestion1daw.viewmodels.SplashScreenViewModel
+import nicolasorteg.gestion1daw.common.viewmodels.SplashScreenViewModel
 
 class SplashScreenController {
     @FXML

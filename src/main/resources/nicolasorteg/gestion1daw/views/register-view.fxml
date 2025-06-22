@@ -4,7 +4,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="530.0" prefWidth="780.0" style="-fx-background-color: #00953d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nicolasorteg.gestion1daw.controllers.RegisterController">
+<AnchorPane prefHeight="530.0" prefWidth="780.0" style="-fx-background-color: #00953d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nicolasorteg.gestion1daw.common.controllers.RegisterController">
 
   <!-- Imagen de fondo -->
   <ImageView fx:id="backgroundImage" fitHeight="530.0" fitWidth="780.0" preserveRatio="false" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">

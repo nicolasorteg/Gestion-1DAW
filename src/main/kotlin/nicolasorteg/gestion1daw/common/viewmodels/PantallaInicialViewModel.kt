@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw.viewmodels
+package nicolasorteg.gestion1daw.common.viewmodels
 
 import com.github.michaelbull.result.Result
 import javafx.collections.FXCollections
