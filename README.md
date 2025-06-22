@@ -20,8 +20,8 @@ Tutorial para abrir la aplicación en escritorio:
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/nicolasorteg/Gestion-1DAW-dev.git
-cd Gestion-1DAW-dev
+git clone https://github.com/nicolasorteg/Gestion-1DAW.git
+cd Gestion-1DAW
 ```
 
 ### Correr el programa
