@@ -147,6 +147,10 @@ jacocoTestReport{
     classDirectories.setFrom (files(classDirectories.files.collect{
       fileTree(dir: it, exclude: [
               "**/models/**",
+              "**/controllers/**",
+              "**/viewmodels/**",
+              "**/database/**",
+              "**/routes/**",
               "**/exceptions/**",
               "**/*Main*.*"
       ])
