@@ -24,7 +24,14 @@ ext {
   junitVersion = '5.10.2'
 }
 
-
+java {
+  modularity.inferModulePath.set(true)
+}
+tasks.named("run") {
+  doFirst {
+    classpath += files("$buildDir/classes/kotlin/main")
+  }
+}
 tasks.withType(JavaCompile) {
   options.encoding = 'UTF-8'
 }
