@@ -12,10 +12,12 @@ module nicolasorteg.gestion1daw {
     requires org.jdbi.v3.sqlobject;
     requires org.jdbi.v3.core;
 
-
     opens nicolasorteg.gestion1daw to javafx.fxml;
     opens nicolasorteg.gestion1daw.controllers to javafx.fxml;
 
     exports nicolasorteg.gestion1daw;
-    exports nicolasorteg.gestion1daw.controllers to javafx.fxml;
+    exports nicolasorteg.gestion1daw.controllers;
+    exports nicolasorteg.gestion1daw.viewmodels;
+    exports nicolasorteg.gestion1daw.alumno.models;
+    exports nicolasorteg.gestion1daw.expediente.model;
 }
