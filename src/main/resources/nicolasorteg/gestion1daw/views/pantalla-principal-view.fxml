@@ -138,10 +138,13 @@
         <TextField fx:id="inputFaltas" layoutX="109.0" layoutY="281.0" prefWidth="200" />
         <TextField fx:id="inputRetrasos" layoutX="109.0" layoutY="321.0" prefWidth="200" />
         <TextField fx:id="inputPartes" layoutX="109.0" layoutY="361.0" prefWidth="200" />
-   
-   
+
+        <!-- Botón para eliminar alumno -->
+        <Button fx:id="btnEliminarAlumno" layoutX="40.0" layoutY="403.0" onAction="#onEliminarAlumnoClicked" prefHeight="26.0" prefWidth="127.0" text="Eliminar alumno" />
+
         <!-- Botón para guardar cambios -->
         <Button fx:id="btnGuardarCambios" layoutX="180.0" layoutY="403.0" onAction="#onGuardarCambiosClicked" prefHeight="26.0" prefWidth="127.0" text="Guardar cambios" />
+
     </AnchorPane>
 
      <Text fill="WHITE" layoutX="630.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalles del alumno:">
