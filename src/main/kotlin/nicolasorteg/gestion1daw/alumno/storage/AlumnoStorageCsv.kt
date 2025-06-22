@@ -3,7 +3,7 @@ package nicolasorteg.gestion1daw.alumno.storage
 import com.github.michaelbull.result.Result
 import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.Err
-import nicolasorteg.gestion1daw.alumno.error.PersonaError
+import nicolasorteg.gestion1daw.alumno.error.AlumnoError
 import nicolasorteg.gestion1daw.alumno.models.Alumno
 import nicolasorteg.gestion1daw.expediente.model.Expediente
 import nicolasorteg.gestion1daw.modulo.model.Modulo
@@ -13,7 +13,7 @@ import java.io.File
 class AlumnoStorageCsv : AlumnoStorage {
     private val logger = logging()
 
-    override fun readFromFile(file: File): Result<List<Alumno>, PersonaError> {
+    override fun readFromFile(file: File): Result<List<Alumno>, AlumnoError> {
         logger.debug { "Leyendo archivo CSV de alumnos: ${file.path}" }
 
         // llamamos a los archivos .csv
@@ -27,7 +27,7 @@ class AlumnoStorageCsv : AlumnoStorage {
             // condicional para verificar que se existen y se pueden leer
             if (!it.exists() || !it.canRead()) {
                 logger.error { "El fichero no existe o no se puede leer: ${it.path}" }
-                return Err(PersonaError.PersonaStorageError("El fichero no existe o no se puede leer: ${it.path}"))
+                return Err(AlumnoError.AlumnoStorageError("El fichero no existe o no se puede leer: ${it.path}"))
             }
         }
 
@@ -122,11 +122,11 @@ class AlumnoStorageCsv : AlumnoStorage {
             Ok(alumnos)
         } catch (e: Exception) {
             logger.error { "⚠️ Error leyendo archivo CSV: ${e.message}" }
-            Err(PersonaError.PersonaStorageError("Error leyendo archivo CSV: ${e.message}"))
+            Err(AlumnoError.AlumnoStorageError("Error leyendo archivo CSV: ${e.message}"))
         }
     }
 
-    override fun writeToFile(file: File, alumno: List<Alumno>): Result<String, PersonaError> {
+    override fun writeToFile(file: File, alumno: List<Alumno>): Result<String, AlumnoError> {
         logger.debug { "Escribiendo alumnos en archivo: ${file.path}" }
 
         try {
@@ -150,7 +150,7 @@ class AlumnoStorageCsv : AlumnoStorage {
             return Ok(file.absolutePath)
         } catch (e: Exception) {
             logger.error { "Error al escribir archivo: ${e.message}" }
-            return Err(PersonaError.PersonaStorageError("Error al escribir archivo: ${e.message}"))
+            return Err(AlumnoError.AlumnoStorageError("Error al escribir archivo: ${e.message}"))
         }
     }
 

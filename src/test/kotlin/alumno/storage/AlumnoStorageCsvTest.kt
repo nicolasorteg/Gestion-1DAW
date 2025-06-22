@@ -2,14 +2,13 @@ package alumno.storage
 
 import com.github.michaelbull.result.get
 import com.github.michaelbull.result.getError
-import nicolasorteg.gestion1daw.alumno.error.PersonaError
+import nicolasorteg.gestion1daw.alumno.error.AlumnoError
 import nicolasorteg.gestion1daw.alumno.models.Alumno
 import nicolasorteg.gestion1daw.alumno.storage.AlumnoStorageCsv
 import nicolasorteg.gestion1daw.expediente.model.Expediente
 import nicolasorteg.gestion1daw.modulo.model.Modulo
 import org.junit.jupiter.api.*
 import java.io.File
-import kotlin.test.assertTrue
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class AlumnoStorageCsvTest {
@@ -87,7 +86,7 @@ class AlumnoStorageCsvTest {
     fun testLeerArchivoInexistente() {
         val fakeFile = File("no_existe.csv")
         val result = storage.readFromFile(fakeFile)
-        Assertions.assertTrue(result.getError() is PersonaError.PersonaStorageError)
+        Assertions.assertTrue(result.getError() is AlumnoError.AlumnoStorageError)
     }
 
     @Test
@@ -112,7 +111,7 @@ class AlumnoStorageCsvTest {
 
         val result = storage.writeToFile(invalidFile, listOf(alumno))
         Assertions.assertTrue(result.isErr)
-        Assertions.assertTrue(result.getError() is PersonaError.PersonaStorageError)
+        Assertions.assertTrue(result.getError() is AlumnoError.AlumnoStorageError)
     }
 
     @Test
@@ -126,7 +125,7 @@ class AlumnoStorageCsvTest {
 
         val result = storage.readFromFile(tempFile)
         Assertions.assertTrue(result.isErr)
-        Assertions.assertTrue(result.getError() is PersonaError.PersonaStorageError)
+        Assertions.assertTrue(result.getError() is AlumnoError.AlumnoStorageError)
     }
 
     @Test
@@ -135,7 +134,7 @@ class AlumnoStorageCsvTest {
         try {
             val result = storage.readFromFile(tempFile)
             Assertions.assertTrue(result.isErr)
-            Assertions.assertTrue(result.getError() is PersonaError.PersonaStorageError)
+            Assertions.assertTrue(result.getError() is AlumnoError.AlumnoStorageError)
         } finally {
             File("data/expedientes_backup.csv").renameTo(expedienteFile)
         }
