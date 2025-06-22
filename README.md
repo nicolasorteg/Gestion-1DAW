@@ -1,6 +1,7 @@
 # Gestión-1DAW - Nicolás Ortega Fernández
 
-Aplicación de escritorio programada con JavaFX (Java + Kotlin) orientada a la gestión del curso 1DAW. Además de permitir ver el listado de alumnos junto a los módulos que cursan, permite gestionar el expediente una ve hecha la matriculación.
+Aplicación de escritorio programada con JavaFX (Java + Kotlin) orientada a la gestión del curso 1DAW.
+Permite importar los Alumnos, editar sus datos, borrarlos, crearlos, filtrarlos...
 
 ## 🚀 Tecnologías utilizadas
 
