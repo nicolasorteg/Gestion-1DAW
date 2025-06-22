@@ -1,5 +1,6 @@
 package nicolasorteg.gestion1daw.alumno.error
 
+
 /**
  * Clase sellada que almacena todos los tipos de
  * errores que se podría dar en el programa respecto a Persona.
