@@ -29,7 +29,7 @@
             <Menu text="Archivo">
                 <items>
                     <MenuItem onAction="#onImportarAlumnosClicked" text="Importar alumnos" />
-                    <MenuItem text="Exportar alumnos" />
+                    <MenuItem onAction="#onExportarAlumnosClicked" text="Exportar alumnos" />
                 </items>
             </Menu>
             <Menu text="Acerca De">

@@ -160,7 +160,7 @@ class PantallaInicialController {
 
 
     @FXML
-    private fun onImportarAlumnosClicked() {
+    fun onImportarAlumnosClicked() {
         val fileChooser = javafx.stage.FileChooser()
         fileChooser.title = "Selecciona archivo CSV de alumnos"
         fileChooser.extensionFilters.add(
@@ -183,6 +183,31 @@ class PantallaInicialController {
             }
         } else {
             println("❗ No se seleccionó ningún archivo.")
+        }
+    }
+
+    @FXML
+    fun onExportarAlumnosClicked() {
+        val fileChooser = javafx.stage.FileChooser()
+        fileChooser.title = "Guardar archivo CSV de alumnos"
+        fileChooser.extensionFilters.add(
+            javafx.stage.FileChooser.ExtensionFilter("CSV files (*.csv)", "*.csv")
+        )
+
+        val selectedFile = fileChooser.showSaveDialog(RoutesManager.activeStage)
+
+        if (selectedFile != null) {
+            val storage = AlumnoStorageCsv()
+            val alumnos = tablaAlumnos.items.toList()
+            val result = storage.writeToFile(selectedFile, alumnos)
+
+            if (result.isOk) {
+                println("✅ Alumnos exportados correctamente a: ${result.value}")
+            } else {
+                println("Error al exportar alumnos: ${result.error.message}")
+            }
+        } else {
+            println("❗ No se seleccionó ningún archivo para guardar.")
         }
     }
 
