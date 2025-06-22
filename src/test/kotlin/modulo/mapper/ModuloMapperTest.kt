@@ -1,4 +1,4 @@
-package modulo.mapper
+package nicolasorteg.gestion1daw.modulo.mapper
 
 import nicolasorteg.gestion1daw.modulo.dao.ModuloEntity
 import nicolasorteg.gestion1daw.modulo.dto.ModuloDto

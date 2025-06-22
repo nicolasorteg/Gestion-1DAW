@@ -1,4 +1,4 @@
-package alumno.storage
+package nicolasorteg.gestion1daw.alumno.storage
 
 import com.github.michaelbull.result.get
 import com.github.michaelbull.result.getError

@@ -1,4 +1,4 @@
-package expediente.mapper
+package nicolasorteg.gestion1daw.expediente.mapper
 
 import nicolasorteg.gestion1daw.expediente.dao.ExpedienteEntity
 import nicolasorteg.gestion1daw.expediente.dto.ExpedienteDto
