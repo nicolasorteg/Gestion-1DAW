@@ -29,13 +29,3 @@ cd Gestion-1DAW
 ```bash
 ./gradlew run
 ```
-### Para ejecutar los test
-```bash
-./gradlew test
-```
-
-### Para generar la documentacion HTML de Dokka
-```bash
-./gradlew dokkaHtml
-
-```
