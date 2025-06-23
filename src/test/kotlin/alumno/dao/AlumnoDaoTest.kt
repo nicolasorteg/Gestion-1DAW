@@ -1,5 +1,7 @@
-/*package nicolasorteg.gestion1daw.alumno.dao
+/*package alumno.dao
 
+import nicolasorteg.gestion1daw.alumno.dao.AlumnoDao
+import nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity
 import nicolasorteg.gestion1daw.common.database.JdbiManager
 import nicolasorteg.gestion1daw.expediente.dao.ExpedienteEntity
 import nicolasorteg.gestion1daw.modulo.dao.ModuloEntity
