@@ -1,15 +1,19 @@
 package nicolasorteg.gestion1daw.common.controllers
 
+import javafx.collections.FXCollections
 import javafx.fxml.FXML
 import javafx.scene.control.*
 import javafx.stage.FileChooser
 import nicolasorteg.gestion1daw.alumno.models.Alumno
 import nicolasorteg.gestion1daw.routes.RoutesManager
 import nicolasorteg.gestion1daw.common.viewmodels.PantallaInicialViewModel
+import nicolasorteg.gestion1daw.expediente.model.Expediente
+import org.lighthousegames.logging.logging
 import java.io.File
 
 class PantallaInicialController {
 
+    private val logger = logging()
     private val viewModel = PantallaInicialViewModel()
 
     @FXML private lateinit var tablaAlumnos: TableView<Alumno>
@@ -24,7 +28,7 @@ class PantallaInicialController {
     @FXML private lateinit var colFaltas: TableColumn<Alumno, Number>
     @FXML private lateinit var colRetrasos: TableColumn<Alumno, Number>
     @FXML private lateinit var colPartes: TableColumn<Alumno, Number>
-
+    @FXML private lateinit var inputBuscar: TextField
     @FXML private lateinit var inputNombre: TextField
     @FXML private lateinit var inputApellidos: TextField
     @FXML private lateinit var inputEdad: TextField
@@ -102,9 +106,9 @@ class PantallaInicialController {
             archivoActual?.let {
                 val result = viewModel.guardarAlumnosEnArchivo(it)
                 if (result.isOk) {
-                    println("✅ Cambios guardados en archivo CSV.")
+                    logger.debug { "✅ Cambios guardados en archivo CSV." }
                 } else {
-                    println("Error al guardar cambios: ${result.error.message}")
+                    logger.debug { "✅ Cambios guardados en archivo CSV." }
                 }
             }
         }
@@ -126,16 +130,16 @@ class PantallaInicialController {
                 archivoActual?.let {
                     val result = viewModel.guardarAlumnosEnArchivo(it)
                     if (result.isOk) {
-                        println("Alumno eliminado y CSV actualizado correctamente.")
+                        logger.debug { "✅ Alumno eliminado y CSV actualizado correctamente." }
                     } else {
-                        println("Error al guardar CSV tras eliminación: ${result.error.message}")
+                        logger.error { "❌ Error al guardar CSV tras eliminación: ${result.error.message}" }
                     }
                 } ?: run {
                     println("No hay archivo CSV cargado para guardar los cambios.")
                 }
             }
         } else {
-            println("No hay alumno seleccionado para eliminar.")
+            logger.warn { "⚠️ No hay alumno seleccionado para eliminar." }
         }
     }
 
@@ -154,13 +158,13 @@ class PantallaInicialController {
         if (selectedFile != null) {
             val resultado = viewModel.cargarAlumnosDesdeArchivo(selectedFile)
             if (resultado.isOk) {
-                println("✅ ${viewModel.alumnos.size} alumnos cargados.")
+                logger.debug { "✅ ${viewModel.alumnos.size} alumnos cargados desde archivo: ${selectedFile.name}" }
                 archivoActual = selectedFile
             } else {
-                println("Error al importar alumnos: ${resultado.error.message}")
+                logger.error { "❌ Error al importar alumnos: ${resultado.error.message}" }
             }
         } else {
-            println("❗ No se seleccionó ningún archivo.")
+            logger.warn { "⚠️ No se seleccionó ningún archivo para importar." }
         }
     }
 
@@ -174,12 +178,70 @@ class PantallaInicialController {
         if (selectedFile != null) {
             val resultado = viewModel.guardarAlumnosEnArchivo(selectedFile)
             if (resultado.isOk) {
-                println("✅ Alumnos exportados correctamente.")
+                logger.debug { "✅ Alumnos exportados correctamente al archivo: ${selectedFile.name}" }
             } else {
-                println("Error al exportar alumnos: ${resultado.error.message}")
+                logger.error { "❌ Error al exportar alumnos: ${resultado.error.message}" }
             }
         } else {
-            println("No se seleccionó ningún archivo para guardar.")
+            logger.warn { "⚠️ No se seleccionó ningún archivo para guardar." }
         }
+    }
+    @FXML
+    fun onBuscarAlumno() {
+        val filtro = inputBuscar.text.trim()
+
+        // condicional simple para mostrar todos los alumnos si no hay filtro
+        if (filtro.isEmpty()) {
+            tablaAlumnos.items = viewModel.alumnos
+        } else {
+            val filtroId = filtro.toIntOrNull()
+
+            // condicional simple para no mostrar nada si no se pone un numero
+            if (filtroId == null) {
+                tablaAlumnos.items = FXCollections.observableArrayList()
+            } else {
+                val alumnosFiltrados = viewModel.alumnos.filter {
+                    it.id == filtroId
+                }
+                tablaAlumnos.items = FXCollections.observableArrayList(alumnosFiltrados)
+            }
+        }
+    }
+
+    @FXML
+    fun onCrearAlumno() {
+
+        // se crea el alumno con los datos vacios
+        val nuevoAlumno = Alumno(
+            id = generarNuevoId(),
+            nombre = "",
+            apellidos = "",
+            fechaNacimiento = "",
+            edad = 0,
+            nacionalidad = "",
+            fechaIncorporacion = "",
+            modulos = emptyList(),
+            expediente = Expediente(emptyMap(), 0.0, ""),
+            notaMedia = 0.0,
+            faltas = 0,
+            retrasos = 0,
+            partes = 0
+        )
+
+
+        viewModel.alumnos.add(nuevoAlumno)
+
+
+        tablaAlumnos.items = viewModel.alumnos
+        tablaAlumnos.selectionModel.select(nuevoAlumno)
+
+        mostrarAlumno(nuevoAlumno)
+
+        logger.debug {"✅ Alumno con ID ${nuevoAlumno.id} creado con datos vacíos correctamente."}
+    }
+
+    private fun generarNuevoId(): Int {
+        val maxId = viewModel.alumnos.maxOfOrNull { it.id } ?: 0
+        return maxId + 1
     }
 }
