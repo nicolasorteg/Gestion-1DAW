@@ -4,7 +4,10 @@ import javafx.application.Application
 import javafx.stage.Stage
 import nicolasorteg.gestion1daw.routes.RoutesManager
 
-class MainApp : Application() {
+/**
+ * main
+ */
+class MainApp: Application() {
 
     override fun start(primaryStage: Stage) {
         RoutesManager.apply {
@@ -14,12 +17,18 @@ class MainApp : Application() {
         }
     }
 
-    override fun stop() {
-        println("On Application Stop")
+    /**
+     * muestra el msg de inicio
+     */
+    override fun init() {
+        println("-- INICIO DE LA APLICACIÓN --")
     }
 
-    override fun init() {
-        println("On Application Init")
+    /**
+     * muestra msg si se detiene
+     */
+    override fun stop() {
+        println("-- APLICACIÓN DETENIDA--")
     }
 }
 
