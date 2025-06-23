@@ -8,6 +8,9 @@ import nicolasorteg.gestion1daw.routes.RoutesManager
 import nicolasorteg.gestion1daw.common.viewmodels.SplashScreenViewModel
 import org.lighthousegames.logging.logging
 
+/**
+ * Controlador de la barra de carga.
+ */
 class SplashScreenController {
 
     private val logger = logging()

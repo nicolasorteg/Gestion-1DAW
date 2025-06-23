@@ -10,6 +10,9 @@ import nicolasorteg.gestion1daw.routes.RoutesManager
 import nicolasorteg.gestion1daw.common.viewmodels.RegisterViewModel
 import org.lighthousegames.logging.logging
 
+/**
+ * Controlador del registro.
+ */
 class RegisterController {
 
     private val logger = logging()

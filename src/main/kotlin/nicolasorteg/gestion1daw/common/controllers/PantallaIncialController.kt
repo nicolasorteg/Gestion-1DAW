@@ -13,6 +13,9 @@ import org.lighthousegames.logging.logging
 import java.io.File
 import javafx.scene.control.cell.PropertyValueFactory
 
+/**
+ * Controlador Pantalla Principal
+ */
 class PantallaInicialController(): KoinComponent {
 
     private val logger = logging()

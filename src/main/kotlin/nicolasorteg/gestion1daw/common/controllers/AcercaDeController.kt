@@ -6,7 +6,7 @@ import nicolasorteg.gestion1daw.common.viewmodels.AcercaDeViewModel
 import org.lighthousegames.logging.logging
 
 /**
- * controlador del acercaDe
+ * Controlador del Acerca de
  */
 class AcercaDeController {
 
