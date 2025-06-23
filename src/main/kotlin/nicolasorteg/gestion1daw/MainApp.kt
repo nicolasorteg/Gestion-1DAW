@@ -2,13 +2,23 @@ package nicolasorteg.gestion1daw
 
 import javafx.application.Application
 import javafx.stage.Stage
+import nicolasorteg.gestion1daw.di.appModule
 import nicolasorteg.gestion1daw.routes.RoutesManager
+import org.koin.core.component.KoinComponent
+import org.koin.core.context.startKoin
 
 /**
  * main
  */
 class MainApp: Application() {
 
+    init {
+        // creacion Koin
+        startKoin {
+            printLogger() // logger de Koin
+            modules(appModule) // modulos de Koin
+        }
+    }
     override fun start(primaryStage: Stage) {
         RoutesManager.apply {
             app = this@MainApp
