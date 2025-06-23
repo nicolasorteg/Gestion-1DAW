@@ -9,21 +9,32 @@ import nicolasorteg.gestion1daw.alumno.validator.AlumnoValidator
 import org.lighthousegames.logging.logging
 import java.io.File
 
+/**
+ * Implementación del servicio para la gestión de alumnos.
+ */
 class AlumnoServiceImpl(
     private val repositorio: AlumnoRepositoryImpl,
     private val validator: AlumnoValidator,
     private val storage: AlumnoStorageCsv
-): AlumnoService<Alumno, AlumnoError, Int> {
+): AlumnoService {
 
     private val logger = logging()
 
+    /**
+     * Obtiene todos los alumnos registrados en el repositorio.
+     */
     override fun getAll(): Result<List<Alumno>, AlumnoError> {
-        logger.debug { "🔍 Obteniendo todos los alumnos desde el repositorio" }
+        logger.debug { "Obteniendo todos los alumnos desde el repositorio..." }
         return Ok(repositorio.getAll())
     }
 
+    /**
+     * Busca un alumno por su identificador único.
+     *
+     * @param id Identificador del alumno.
+     */
     override fun getByID(id: Int): Result<Alumno, AlumnoError> {
-        logger.debug { "🔍 Buscando alumno con id = $id" }
+        logger.debug { "🔵 Buscando alumno con id = $id..." }
         val alumno = repositorio.getById(id)
         return if (alumno != null) {
             Ok(alumno)
@@ -32,8 +43,13 @@ class AlumnoServiceImpl(
         }
     }
 
+    /**
+     * Valida y guarda un nuevo alumno en el repositorio.
+     *
+     * @param item Alumno a guardar.
+     */
     override fun save(item: Alumno): Result<Alumno, AlumnoError> {
-        logger.debug { "💾 Guardando alumno: $item" }
+        logger.debug { "🔵 Guardando alumno: $item..." }
 
         return validator.validate(item)
             .andThen {
@@ -46,8 +62,14 @@ class AlumnoServiceImpl(
             }
     }
 
+    /**
+     * Valida y actualiza un alumno existente.
+     *
+     * @param id Identificador del alumno a actualizar.
+     * @param item Nuevos datos del alumno.
+     */
     override fun update(id: Int, item: Alumno): Result<Alumno, AlumnoError> {
-        logger.debug { "✏️ Actualizando alumno con id = $id" }
+        logger.debug { "🔵 Actualizando alumno con id = $id..." }
 
         return validator.validate(item)
             .andThen {
@@ -60,8 +82,13 @@ class AlumnoServiceImpl(
             }
     }
 
+    /**
+     * Elimina un alumno del repositorio por su id.
+     *
+     * @param id Identificador del alumno a eliminar.
+     */
     override fun delete(id: Int): Result<Alumno, AlumnoError> {
-        logger.debug { "🗑️ Eliminando alumno con id = $id" }
+        logger.debug { "🔵 Eliminando alumno con id = $id..." }
 
         return try {
             val deleted = repositorio.delete(id)
@@ -76,13 +103,23 @@ class AlumnoServiceImpl(
         }
     }
 
-    fun loadFromCsv(file: File): Result<List<Alumno>, AlumnoError> {
-        logger.debug { "📂 Cargando alumnos desde archivo CSV: ${file.name}" }
+    /**
+     * Carga una lista de alumnos desde un archivo CSV.
+     *
+     * @param file Archivo CSV desde el que se leerán los alumnos.
+     */
+    override fun loadFromCsv(file: File): Result<List<Alumno>, AlumnoError> {
+        logger.debug { "🔵 Cargando alumnos desde archivo CSV: ${file.name}..." }
         return storage.readFromFile(file)
     }
 
-    fun saveToCsv(file: File): Result<String, AlumnoError> {
-        logger.debug { "📁 Guardando alumnos a archivo CSV: ${file.name}" }
+    /**
+     * Guarda la lista de alumnos actuales en un archivo CSV.
+     *
+     * @param file Archivo CSV donde se guardarán los alumnos.
+     */
+    override fun saveToCsv(file: File): Result<String, AlumnoError> {
+        logger.debug { "🔵 Guardando alumnos a archivo CSV: ${file.name}..." }
         return storage.writeToFile(file, repositorio.getAll())
     }
 }
