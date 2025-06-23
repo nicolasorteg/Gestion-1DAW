@@ -11,39 +11,67 @@ import nicolasorteg.gestion1daw.expediente.model.Expediente
 import org.lighthousegames.logging.logging
 import java.io.File
 
+/**
+ * controlador de la pantalla principal
+ */
 class PantallaInicialController {
 
     private val logger = logging()
     private val viewModel = PantallaInicialViewModel()
 
-    @FXML private lateinit var tablaAlumnos: TableView<Alumno>
-    @FXML private lateinit var colId: TableColumn<Alumno, Number>
-    @FXML private lateinit var colNombre: TableColumn<Alumno, String>
-    @FXML private lateinit var colApellidos: TableColumn<Alumno, String>
-    @FXML private lateinit var colEdad: TableColumn<Alumno, Number>
-    @FXML private lateinit var colNotaMedia: TableColumn<Alumno, Number>
-    @FXML private lateinit var colFechaNacimiento: TableColumn<Alumno, String>
-    @FXML private lateinit var colNacionalidad: TableColumn<Alumno, String>
-    @FXML private lateinit var colFechaIncorporacion: TableColumn<Alumno, String>
-    @FXML private lateinit var colFaltas: TableColumn<Alumno, Number>
-    @FXML private lateinit var colRetrasos: TableColumn<Alumno, Number>
-    @FXML private lateinit var colPartes: TableColumn<Alumno, Number>
-    @FXML private lateinit var inputBuscar: TextField
-    @FXML private lateinit var inputNombre: TextField
-    @FXML private lateinit var inputApellidos: TextField
-    @FXML private lateinit var inputEdad: TextField
-    @FXML private lateinit var inputFechaNacimiento: TextField
-    @FXML private lateinit var inputNacionalidad: TextField
-    @FXML private lateinit var inputFechaIncorporacion: TextField
-    @FXML private lateinit var inputNotaMedia: TextField
-    @FXML private lateinit var inputFaltas: TextField
-    @FXML private lateinit var inputRetrasos: TextField
-    @FXML private lateinit var inputPartes: TextField
+    @FXML
+    private lateinit var tablaAlumnos: TableView<Alumno>
 
-    @FXML private lateinit var btnGuardarCambios: Button
-    @FXML private lateinit var btnEliminarAlumno: Button
+    @FXML
+    private lateinit var colId: TableColumn<Alumno, Number>
+    @FXML
+    private lateinit var colNombre: TableColumn<Alumno, String>
+    @FXML
+    private lateinit var colApellidos: TableColumn<Alumno, String>
+    @FXML
+    private lateinit var colEdad: TableColumn<Alumno, Number>
+    @FXML
+    private lateinit var colNotaMedia: TableColumn<Alumno, Number>
+    @FXML
+    private lateinit var colFechaNacimiento: TableColumn<Alumno, String>
+    @FXML
+    private lateinit var colNacionalidad: TableColumn<Alumno, String>
+    @FXML
+    private lateinit var colFechaIncorporacion: TableColumn<Alumno, String>
+    @FXML
+    private lateinit var colFaltas: TableColumn<Alumno, Number>
+    @FXML
+    private lateinit var colRetrasos: TableColumn<Alumno, Number>
+    @FXML
+    private lateinit var colPartes: TableColumn<Alumno, Number>
+    @FXML
+    private lateinit var inputBuscar: TextField
+    @FXML
+    private lateinit var inputNombre: TextField
+    @FXML
+    private lateinit var inputApellidos: TextField
+    @FXML
+    private lateinit var inputEdad: TextField
+    @FXML
+    private lateinit var inputFechaNacimiento: TextField
+    @FXML
+    private lateinit var inputNacionalidad: TextField
+    @FXML
+    private lateinit var inputFechaIncorporacion: TextField
+    @FXML
+    private lateinit var inputNotaMedia: TextField
+    @FXML
+    private lateinit var inputFaltas: TextField
+    @FXML
+    private lateinit var inputRetrasos: TextField
+    @FXML
+    private lateinit var inputPartes: TextField
 
-    // Guardamos la referencia del archivo CSV cargado
+    @FXML
+    private lateinit var btnGuardarCambios: Button
+    @FXML
+    private lateinit var btnEliminarAlumno: Button
+
     private var archivoActual: File? = null
 
     @FXML
@@ -84,6 +112,7 @@ class PantallaInicialController {
     fun onGuardarCambiosClicked() {
         val alumnoSeleccionado = tablaAlumnos.selectionModel.selectedItem
         if (alumnoSeleccionado != null) {
+
             val nuevosDatos = Alumno(
                 id = alumnoSeleccionado.id,
                 nombre = inputNombre.text,
@@ -102,7 +131,7 @@ class PantallaInicialController {
             viewModel.actualizarAlumno(alumnoSeleccionado, nuevosDatos)
             tablaAlumnos.refresh()
 
-            // Guardar automáticamente en archivo actual
+            // se guarda automaticamente el archivo actuall
             archivoActual?.let {
                 val result = viewModel.guardarAlumnosEnArchivo(it)
                 if (result.isOk) {
@@ -111,6 +140,15 @@ class PantallaInicialController {
                     logger.debug { "✅ Cambios guardados en archivo CSV." }
                 }
             }
+        } else {
+            val advertencia = Alert(Alert.AlertType.WARNING).apply {
+                title = "Advertencia"
+                headerText = "No se ha seleccionado ningún alumno"
+                contentText = "Por favor, selecciona un alumno antes de guardar los cambios."
+            }
+            advertencia.showAndWait()
+
+            logger.warn { "⚠️ No hay alumno seleccionado para guardar cambios." }
         }
     }
 
@@ -139,6 +177,14 @@ class PantallaInicialController {
                 }
             }
         } else {
+            // se muestra adertencia si no selecciona alumno
+            val advertencia = Alert(Alert.AlertType.WARNING).apply {
+                title = "Advertencia"
+                headerText = "No se ha seleccionado ningún alumno"
+                contentText = "Por favor, selecciona un alumno antes de guardar los cambios."
+            }
+            advertencia.showAndWait()
+
             logger.warn { "⚠️ No hay alumno seleccionado para eliminar." }
         }
     }
