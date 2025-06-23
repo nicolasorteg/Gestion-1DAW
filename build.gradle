@@ -27,6 +27,7 @@ ext {
 java {
   modularity.inferModulePath.set(true)
 }
+
 tasks.named("run") {
   doFirst {
     classpath += files("$buildDir/classes/kotlin/main")
@@ -102,6 +103,7 @@ dependencies {
 
   //BCrypt
   implementation("org.mindrot:jbcrypt:0.4")
+
   //libreria de pdf
   implementation("com.openhtmltopdf:openhtmltopdf-pdfbox:1.0.10")
 
@@ -175,4 +177,3 @@ task testCoverage(group: 'verification', description: 'Runs the unit tests with 
 tasks.processResources {
   duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
-
