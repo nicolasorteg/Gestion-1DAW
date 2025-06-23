@@ -37,6 +37,11 @@
                     <MenuItem onAction="#onAcercaDeClicked" text="Acerca De" />
                 </items>
             </Menu>
+            <Menu text="Cerrar sesión">
+                <items>
+                    <MenuItem onAction="#onCerrarSesionClicked" text="Cerrar sesión" />
+                </items>
+            </Menu>
         </menus>
     </MenuBar>
 
