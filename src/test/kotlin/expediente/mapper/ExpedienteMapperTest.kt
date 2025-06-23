@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw.expediente.mapper
+package expediente.mapper
 
 import nicolasorteg.gestion1daw.expediente.dao.ExpedienteEntity
 import nicolasorteg.gestion1daw.expediente.dto.ExpedienteDto
@@ -20,11 +20,13 @@ class ExpedienteMapperTest {
         notaMedia = 7.166666666666667,
         observaciones = "Alumno con buen rendimiento general."
     )
+    // datos de ejemplo para expedientedto
     private val expedienteDto = ExpedienteDto(
         calificaciones = calificacionesEjemplo,
         notaMedia = 7.166666666666667,
         observaciones = "Alumno con buen rendimiento general."
     )
+    // datos de ejemplo para expedienteentity
     private val expedienteEntity = ExpedienteEntity(
         calificaciones = calificacionesEjemplo,
         notaMedia = 7.166666666666667,

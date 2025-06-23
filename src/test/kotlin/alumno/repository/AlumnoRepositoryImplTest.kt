@@ -1,9 +1,9 @@
-/*package nicolasorteg.gestion1daw.alumno.repository
+package alumno.repository
 
-import AlumnoRepositoryImpl
 import nicolasorteg.gestion1daw.alumno.dao.AlumnoDao
 import nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity
 import nicolasorteg.gestion1daw.alumno.models.Alumno
+import nicolasorteg.gestion1daw.alumno.repository.AlumnoRepositoryImpl
 import nicolasorteg.gestion1daw.expediente.dao.ExpedienteEntity
 import nicolasorteg.gestion1daw.expediente.model.Expediente
 import nicolasorteg.gestion1daw.modulo.dao.ModuloEntity
@@ -27,7 +27,7 @@ class AlumnoRepositoryImplTest {
     private lateinit var alumnoEntity: AlumnoEntity
 
     @BeforeEach
-    fun setUp() {
+    fun setupDatosIniciales() {
         repository = AlumnoRepositoryImpl(dao)
 
         alumno = Alumno(
@@ -78,7 +78,8 @@ class AlumnoRepositoryImplTest {
     }
 
     @Test
-    fun `Debe guardar un alumno correctamente`() {
+    @DisplayName("Test que verifica guardar un alumno correctamente")
+    fun testGuardarAlumnoCorrectamente() {
         `when`(dao.save(any())).thenReturn(1)
         `when`(dao.findById(1)).thenReturn(alumnoEntity)
 
@@ -90,7 +91,8 @@ class AlumnoRepositoryImplTest {
     }
 
     @Test
-    fun `Debe devolver todos los alumnos`() {
+    @DisplayName("Test que verifica obtener todos los alumnos")
+    fun testObtenerTodosLosAlumnos() {
         `when`(dao.findAll()).thenReturn(listOf(alumnoEntity))
 
         val result = repository.getAll()
@@ -101,7 +103,8 @@ class AlumnoRepositoryImplTest {
     }
 
     @Test
-    fun `Debe devolver un alumno por ID si existe`() {
+    @DisplayName("Test que verifica obtener un alumno por ID cuando existe")
+    fun testObtenerAlumnoPorIdExistente() {
         `when`(dao.findById(1)).thenReturn(alumnoEntity)
 
         val result = repository.getById(1)
@@ -112,7 +115,8 @@ class AlumnoRepositoryImplTest {
     }
 
     @Test
-    fun `Debe devolver null si el alumno no existe`() {
+    @DisplayName("Test que devuelve null al obtener un alumno por ID inexistente")
+    fun testObtenerAlumnoPorIdNoExistente() {
         `when`(dao.findById(99)).thenReturn(null)
 
         val result = repository.getById(99)
@@ -122,7 +126,8 @@ class AlumnoRepositoryImplTest {
     }
 
     @Test
-    fun `Debe eliminar un alumno existente`() {
+    @DisplayName("Test que elimina un alumno existente correctamente")
+    fun testEliminarAlumnoExistente() {
         `when`(dao.findById(1)).thenReturn(alumnoEntity)
         `when`(dao.delete(1)).thenReturn(1)
 
@@ -135,7 +140,8 @@ class AlumnoRepositoryImplTest {
     }
 
     @Test
-    fun `No debe eliminar si no existe el alumno`() {
+    @DisplayName("Test que no elimina si el alumno no existe")
+    fun testNoEliminarAlumnoNoExistente() {
         `when`(dao.findById(2)).thenReturn(null)
 
         val result = repository.delete(2)
@@ -146,7 +152,8 @@ class AlumnoRepositoryImplTest {
     }
 
     @Test
-    fun `Debe actualizar un alumno existente`() {
+    @DisplayName("Test que actualiza un alumno existente correctamente")
+    fun testActualizarAlumnoExistente() {
         val updatedAlumno = Alumno(
             id = alumno.id,
             nombre = "Actualizado",
@@ -187,11 +194,12 @@ class AlumnoRepositoryImplTest {
         Assertions.assertNotNull(result)
         Assertions.assertEquals("Actualizado", result!!.nombre)
         verify(dao, times(1)).update(any())
-        verify(dao, times(2)).findById(1) // antes y después de update
+        verify(dao, times(2)).findById(1)
     }
 
     @Test
-    fun `No debe actualizar si el alumno no existe`() {
+    @DisplayName("Test que no actualiza si el alumno no existe")
+    fun testNoActualizarAlumnoNoExistente() {
         val updatedAlumno = Alumno(
             id = alumno.id,
             nombre = "Actualizado",
@@ -216,4 +224,32 @@ class AlumnoRepositoryImplTest {
         verify(dao, times(1)).findById(99)
         verify(dao, times(0)).update(any())
     }
-}*/
+
+    @Test
+    @DisplayName("Test que lanza excepción si no se puede recuperar el alumno después de guardar")
+    fun testLanzarExcepcionSiNoSeRecuperaAlumnoDespuesDeGuardar() {
+        `when`(dao.save(any())).thenReturn(1)
+        `when`(dao.findById(1)).thenReturn(null)
+
+        val exception = Assertions.assertThrows(IllegalStateException::class.java) {
+            repository.save(alumno)
+        }
+
+        Assertions.assertEquals("Error al guardar el alumno.", exception.message)
+        verify(dao, times(1)).save(any())
+        verify(dao, times(1)).findById(1)
+    }
+
+    @Test
+    @DisplayName("Test que devuelve null si la actualización no afecta a ninguna fila")
+    fun testActualizarDevuelveNullSiNoAfectaFilas() {
+        `when`(dao.findById(1)).thenReturn(alumnoEntity)
+        `when`(dao.update(any())).thenReturn(0)
+
+        val result = repository.update(alumno, 1)
+
+        Assertions.assertNull(result)
+        verify(dao, times(1)).findById(1)
+        verify(dao, times(1)).update(any())
+    }
+}

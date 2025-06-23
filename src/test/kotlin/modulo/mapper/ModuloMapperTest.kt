@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw.modulo.mapper
+package modulo.mapper
 
 import nicolasorteg.gestion1daw.modulo.dao.ModuloEntity
 import nicolasorteg.gestion1daw.modulo.dto.ModuloDto
@@ -12,8 +12,11 @@ import org.junit.jupiter.api.Test
 
 class ModuloMapperTest {
 
+    // datos de ejemplo para modulo
     private val moduloModel = Modulo(nombre = "Acceso a Datos", siglas = "AD", horas = 150)
+    // datos de ejemplo para moduloDto
     private val moduloDto = ModuloDto(nombre = "Acceso a Datos", siglas = "AD", horas = 150)
+    // datos de ejemplo para moduloEntity
     private val moduloEntity = ModuloEntity(nombre = "Acceso a Datos", siglas = "AD", horas = 150)
 
     @Test
