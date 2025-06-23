@@ -11,13 +11,13 @@ import java.io.InputStream
 import java.net.URL
 
 object RoutesManager {
-    private lateinit var mainStage: Stage // Escena principal de la app
-    private lateinit var _activeStage: Stage // Escena cargada actualmente en la vista
+    private lateinit var mainStage: Stage // scena principal de la app
+    private lateinit var _activeStage: Stage // escena cargada actualmente en la vista
     val activeStage: Stage
         get() = _activeStage
     lateinit var app: Application
 
-    val logger = logging()
+    private val logger = logging()
 
     enum class Vistas(val path: String) {
         SPLASH("views/splash-screen-view.fxml"),
@@ -27,7 +27,7 @@ object RoutesManager {
     }
 
     fun initSplashStage(stage: Stage) {
-        logger.debug { "Iniciando splash screen" }
+        logger.debug { "🔵 Iniciando splash screen" }
         val fxmlLoader = FXMLLoader(getResource(Vistas.SPLASH.path))
         val parentRoot = fxmlLoader.load<Pane>()
         val myScene = Scene(parentRoot, 778.0, 530.0)
@@ -42,7 +42,7 @@ object RoutesManager {
     }
 
     fun initRegisterStage(stage: Stage){
-        logger.debug { "Iniciando register stage" }
+        logger.debug { "🔵 Iniciando registro..." }
         val fxmlLoader = FXMLLoader(getResource(Vistas.REGISTER.path))
         val parentRoot = fxmlLoader.load<Pane>()
         val myScene = Scene(parentRoot, 778.0, 530.0)
@@ -58,11 +58,11 @@ object RoutesManager {
     }
 
     fun initPantallaInicialStage(stage: Stage) {
-        logger.debug { "Iniciando pantalla principal" }
+        logger.debug { "🔵 Iniciando pantalla principal..." }
         val fxmlLoader = FXMLLoader(getResource(Vistas.PANTALLA_INICIAL.path))
         val parentRoot = fxmlLoader.load<Pane>()
         val scene = Scene(parentRoot, 1000.0, 631.0)
-        stage.title = "Pantalla Principal"
+        stage.title = "Gestión Alumnos"
         stage.scene = scene
         stage.centerOnScreen()
         stage.icons.add(Image(getResourceAsStream("media/app-icon.png")))
@@ -73,11 +73,12 @@ object RoutesManager {
     }
 
     fun initAcercaDeStage(owner: Stage) {
+        logger.debug { "🔵 Iniciando acercaDe..." }
         val fxmlLoader = FXMLLoader(getResource(Vistas.ACERCA_DE.path))
         val root = fxmlLoader.load<Pane>()
         val stage = Stage()
 
-        stage.title = "Acerca de"
+        stage.title = "Acerca De"
         stage.scene = Scene(root, 390.0, 310.0)
         stage.initOwner(owner)
         stage.isResizable = false
