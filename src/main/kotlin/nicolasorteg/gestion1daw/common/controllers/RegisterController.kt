@@ -38,8 +38,7 @@ class RegisterController {
             alert.showAndWait()
         } else {
             logger.debug { "✅ Registro finalizado con éxito" }
-            println("Usuario: ${viewModel.getUsername()}")
-            println("Contraseña: ${viewModel.getPassword()}")
+            logger.debug { "Usuario: ${viewModel.getUsername()}, Contraseña: ${viewModel.getPassword()}" }
             RoutesManager.initPantallaInicialStage(usernameTextField.scene.window as Stage)
 
         }
