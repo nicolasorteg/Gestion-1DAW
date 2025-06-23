@@ -1,3 +1,4 @@
+
 plugins {
   id 'java'
   id 'application'
@@ -73,12 +74,6 @@ dependencies {
 
   // Result
   implementation("com.michael-bull.kotlin-result:kotlin-result:2.0.0")
-
-  // Kotlin Serialization Json
-  implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
-
-  // Kotlin Serialization XML
-  implementation("io.github.pdvrieze.xmlutil:serialization-jvm:0.86.0")
 
   // Vaadin
   implementation("com.vaadin:open:8.5.0.4")
