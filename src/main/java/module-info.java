@@ -9,9 +9,11 @@ module nicolasorteg.gestion1daw {
 
     // result
     requires kotlin.result.jvm;
+
     // Logger
     requires logging.jvm;
     requires org.slf4j;
+
     // jdbi
     requires org.jdbi.v3.sqlobject.kotlin;
     requires org.jdbi.v3.sqlobject;
@@ -22,10 +24,13 @@ module nicolasorteg.gestion1daw {
     requires koin.core.jvm;
     requires io.leangen.geantyref;
 
+    //bcrypt
+    requires jbcrypt;
 
     requires java.sql;
     requires com.h2database;
     requires kotlin.reflect;
+
 
     // fxml
     opens nicolasorteg.gestion1daw to javafx.fxml;
