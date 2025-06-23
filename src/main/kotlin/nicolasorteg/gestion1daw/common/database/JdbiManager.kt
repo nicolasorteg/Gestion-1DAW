@@ -1,3 +1,4 @@
+
 package nicolasorteg.gestion1daw.common.database
 
 import org.jdbi.v3.core.Jdbi
@@ -17,7 +18,7 @@ class JdbiManager (
 ){
     private val logger = logging()
 
-     // para que Jdbi se cree cuando se necesite
+    // para que Jdbi se cree cuando se necesite
     val jdbi by lazy {
         Jdbi.create(this.databaseUrl)
     }
