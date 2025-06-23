@@ -1,4 +1,4 @@
-package nicolasorteg.gestion1daw.alumno.mapper
+package nicolasorteg.gestion1daw.alumno.mappers
 
 import nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity
 import nicolasorteg.gestion1daw.alumno.dto.AlumnoDto
