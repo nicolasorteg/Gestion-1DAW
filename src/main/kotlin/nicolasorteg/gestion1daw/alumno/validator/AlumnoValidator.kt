@@ -8,8 +8,7 @@ import nicolasorteg.gestion1daw.alumno.models.Alumno
 import org.lighthousegames.logging.logging
 
 /**
- * Aquí se valida la entrada de datos del Alumno,
- * heredando de la Interfaz Validator.
+ * Extensión de validador
  */
 class AlumnoValidator: Validator<Alumno, AlumnoError> {
     private val logger = logging()

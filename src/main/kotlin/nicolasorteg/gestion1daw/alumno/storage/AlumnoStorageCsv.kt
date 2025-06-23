@@ -10,11 +10,20 @@ import nicolasorteg.gestion1daw.modulo.model.Modulo
 import org.lighthousegames.logging.logging
 import java.io.File
 
+/**
+ * Implementación de Storage.
+ */
 class AlumnoStorageCsv : AlumnoStorage {
     private val logger = logging()
 
+    /**
+     * Lee los datos de alumnos desde un archivo CSV.
+     *
+     * @param file Archivo CSV con alumnos.
+     * @return Lista de alumnos si tiene éxito o ERROR si ocurre algún error.
+     */
     override fun readFromFile(file: File): Result<List<Alumno>, AlumnoError> {
-        logger.debug { "Leyendo archivo CSV de alumnos: ${file.path}" }
+        logger.debug { "🔵 Leyendo archivo CSV de alumnos: ${file.path}" }
 
         // llamamos a los archivos .csv
         val expedienteFile = File("data/expedientes.csv")
@@ -26,7 +35,7 @@ class AlumnoStorageCsv : AlumnoStorage {
 
             // condicional para verificar que se existen y se pueden leer
             if (!it.exists() || !it.canRead()) {
-                logger.error { "El fichero no existe o no se puede leer: ${it.path}" }
+                logger.error { "❌ El fichero no existe o no se puede leer: ${it.path}" }
                 return Err(AlumnoError.AlumnoStorageError("El fichero no existe o no se puede leer: ${it.path}"))
             }
         }
@@ -39,7 +48,7 @@ class AlumnoStorageCsv : AlumnoStorage {
                     val campos = line.split(",").map { it.trim() }
                     try {
                         if (campos.size < 3) {
-                            logger.warn { "Línea de expediente inválida: $line" }
+                            logger.warn { "⚠️ Línea de expediente inválida: $line" }
                             return@mapNotNull null
                         }
 
@@ -57,7 +66,7 @@ class AlumnoStorageCsv : AlumnoStorage {
 
                         idAlumno to Expediente(calificaciones, notaMedia, observaciones)
                     } catch (e: Exception) {
-                        logger.warn { "Error procesando expediente: $line -> ${e.message}" }
+                        logger.warn { "⚠️ Error procesando expediente: $line -> ${e.message}" }
                         null
                     }
                 }.toMap()
@@ -126,8 +135,15 @@ class AlumnoStorageCsv : AlumnoStorage {
         }
     }
 
+    /**
+     * Escribe una lista de alumnos a CSV.
+     *
+     * @param file Archivo destino donde se guardarán los datos.
+     * @param alumno Lista de alumnos a guardar.
+     * @return La ruta del archivo si tiene éxito rror si ocurre algún error.
+     */
     override fun writeToFile(file: File, alumno: List<Alumno>): Result<String, AlumnoError> {
-        logger.debug { "Escribiendo alumnos en archivo: ${file.path}..." }
+        logger.debug { "🔵 Escribiendo alumnos en archivo: ${file.path}..." }
 
         try {
             val parent = file.parentFile
@@ -149,7 +165,7 @@ class AlumnoStorageCsv : AlumnoStorage {
             logger.info { "✅ Alumnos escritos correctamente en ${file.path}" }
             return Ok(file.absolutePath)
         } catch (e: Exception) {
-            logger.error { "Error al escribir archivo: ${e.message}" }
+            logger.error { "❌ Error al escribir archivo: ${e.message}" }
             return Err(AlumnoError.AlumnoStorageError("Error al escribir archivo: ${e.message}"))
         }
     }

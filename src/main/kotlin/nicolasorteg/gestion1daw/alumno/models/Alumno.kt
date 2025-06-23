@@ -5,6 +5,14 @@ import nicolasorteg.gestion1daw.modulo.model.Modulo
 
 /**
  * Aquí se guardan los datos/atributos de Alumno, que hereda de Persona.
+ *
+ * @property fechaIncorporacion Fecha de incorporación del alumno.
+ * @property modulos Lista de módulos que el alumno está cursando.
+ * @property expediente Expediente académico del alumno.
+ * @property notaMedia Nota media de las calificaciones del alumno.
+ * @property faltas Número de faltas acumuladas por el alumno.
+ * @property retrasos Número de retrasos acumulados por el alumno.
+ * @property partes Número de partes disciplinarios recibidos.
  */
 class Alumno(
 
