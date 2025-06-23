@@ -127,7 +127,7 @@ class AlumnoStorageCsv : AlumnoStorage {
     }
 
     override fun writeToFile(file: File, alumno: List<Alumno>): Result<String, AlumnoError> {
-        logger.debug { "Escribiendo alumnos en archivo: ${file.path}" }
+        logger.debug { "Escribiendo alumnos en archivo: ${file.path}..." }
 
         try {
             val parent = file.parentFile
