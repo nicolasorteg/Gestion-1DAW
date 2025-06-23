@@ -22,6 +22,7 @@ object RoutesManager {
     enum class Vistas(val path: String) {
         SPLASH("views/splash-screen-view.fxml"),
         REGISTER("views/register-view.fxml"),
+        LOGIN("views/login-view.fxml"),
         PANTALLA_INICIAL("views/pantalla-principal-view.fxml"),
         ACERCA_DE("views/acerca-de-view.fxml")
     }
@@ -55,6 +56,28 @@ object RoutesManager {
         mainStage = stage
         _activeStage = stage
         mainStage.show()
+    }
+
+    fun initLoginStage(stage: Stage) {
+        logger.debug { "🔵 Iniciando login..." }
+        val fxmlLoader = FXMLLoader(getResource(Vistas.LOGIN.path))
+        val parentRoot = fxmlLoader.load<Pane>()
+        val scene = Scene(parentRoot, 778.0, 530.0)
+        stage.title = "Inicio de Sesión"
+        stage.scene = scene
+        stage.centerOnScreen()
+        stage.icons.add(Image(getResourceAsStream("media/app-icon.png")))
+        stage.isResizable = false
+        _activeStage = stage
+        mainStage = stage
+        stage.show()
+    }
+
+    fun changeScene(view: String) {
+        val fxmlLoader = FXMLLoader(javaClass.getResource(view))
+        val scene = Scene(fxmlLoader.load())
+        activeStage.scene = scene
+        activeStage.show()
     }
 
     fun initPantallaInicialStage(stage: Stage) {

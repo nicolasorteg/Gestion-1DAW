@@ -5,10 +5,12 @@ import javafx.scene.control.PasswordField
 import javafx.scene.control.TextField
 import javafx.scene.control.Alert
 import javafx.scene.control.Alert.AlertType
+import javafx.scene.control.Button
 import javafx.stage.Stage
 import nicolasorteg.gestion1daw.routes.RoutesManager
 import nicolasorteg.gestion1daw.common.viewmodels.RegisterViewModel
 import org.lighthousegames.logging.logging
+import org.mindrot.jbcrypt.BCrypt
 
 /**
  * Controlador del registro.
@@ -23,12 +25,18 @@ class RegisterController {
     @FXML
     private lateinit var passwordField: PasswordField
 
+    @FXML
+    lateinit var loginButton: Button
+
     private val viewModel = RegisterViewModel()
 
     @FXML
     fun initialize() {
         usernameTextField.textProperty().bindBidirectional(viewModel.usernameProperty)
         passwordField.textProperty().bindBidirectional(viewModel.passwordProperty)
+        loginButton.setOnAction {
+            RoutesManager.initLoginStage(usernameTextField.scene.window as Stage)
+        }
     }
 
     @FXML

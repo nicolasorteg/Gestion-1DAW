@@ -203,6 +203,11 @@ class PantallaInicialController(): KoinComponent {
     private fun onAcercaDeClicked() {
         viewModel.abrirAcercaDe(RoutesManager.activeStage)
     }
+    @FXML
+    fun onCerrarSesionClicked() {
+        RoutesManager.initRegisterStage(RoutesManager.activeStage)
+    }
+
 
     @FXML
     fun onImportarAlumnosClicked() {
