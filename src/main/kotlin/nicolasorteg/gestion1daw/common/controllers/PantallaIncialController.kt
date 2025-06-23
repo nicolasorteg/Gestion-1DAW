@@ -7,17 +7,16 @@ import javafx.stage.FileChooser
 import nicolasorteg.gestion1daw.alumno.models.Alumno
 import nicolasorteg.gestion1daw.routes.RoutesManager
 import nicolasorteg.gestion1daw.common.viewmodels.PantallaInicialViewModel
-import nicolasorteg.gestion1daw.expediente.model.Expediente
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.inject
 import org.lighthousegames.logging.logging
 import java.io.File
+import javafx.scene.control.cell.PropertyValueFactory
 
-/**
- * controlador de la pantalla principal
- */
-class PantallaInicialController {
+class PantallaInicialController(): KoinComponent {
 
     private val logger = logging()
-    private val viewModel = PantallaInicialViewModel()
+    private val viewModel: PantallaInicialViewModel by inject()
 
     @FXML
     private lateinit var tablaAlumnos: TableView<Alumno>
@@ -76,17 +75,17 @@ class PantallaInicialController {
 
     @FXML
     fun initialize() {
-        colId.setCellValueFactory { javafx.beans.property.SimpleIntegerProperty(it.value.id) }
-        colNombre.setCellValueFactory { javafx.beans.property.SimpleStringProperty(it.value.nombre) }
-        colApellidos.setCellValueFactory { javafx.beans.property.SimpleStringProperty(it.value.apellidos) }
-        colEdad.setCellValueFactory { javafx.beans.property.SimpleIntegerProperty(it.value.edad) }
-        colNotaMedia.setCellValueFactory { javafx.beans.property.SimpleDoubleProperty(it.value.notaMedia) }
-        colFechaNacimiento.setCellValueFactory { javafx.beans.property.SimpleStringProperty(it.value.fechaNacimiento) }
-        colNacionalidad.setCellValueFactory { javafx.beans.property.SimpleStringProperty(it.value.nacionalidad) }
-        colFechaIncorporacion.setCellValueFactory { javafx.beans.property.SimpleStringProperty(it.value.fechaIncorporacion) }
-        colFaltas.setCellValueFactory { javafx.beans.property.SimpleIntegerProperty(it.value.faltas) }
-        colRetrasos.setCellValueFactory { javafx.beans.property.SimpleIntegerProperty(it.value.retrasos) }
-        colPartes.setCellValueFactory { javafx.beans.property.SimpleIntegerProperty(it.value.partes) }
+        colId.cellValueFactory = PropertyValueFactory("id")
+        colNombre.cellValueFactory = PropertyValueFactory("nombre")
+        colApellidos.cellValueFactory = PropertyValueFactory("apellidos")
+        colEdad.cellValueFactory = PropertyValueFactory("edad")
+        colNotaMedia.cellValueFactory = PropertyValueFactory("notaMedia")
+        colFechaNacimiento.cellValueFactory = PropertyValueFactory("fechaNacimiento")
+        colNacionalidad.cellValueFactory = PropertyValueFactory("nacionalidad")
+        colFechaIncorporacion.cellValueFactory = PropertyValueFactory("fechaIncorporacion")
+        colFaltas.cellValueFactory = PropertyValueFactory("faltas")
+        colRetrasos.cellValueFactory = PropertyValueFactory("retrasos")
+        colPartes.cellValueFactory = PropertyValueFactory("partes")
 
         tablaAlumnos.items = viewModel.alumnos
 
@@ -128,17 +127,27 @@ class PantallaInicialController {
                 retrasos = inputRetrasos.text.toIntOrNull() ?: alumnoSeleccionado.retrasos,
                 partes = inputPartes.text.toIntOrNull() ?: alumnoSeleccionado.partes
             )
-            viewModel.actualizarAlumno(alumnoSeleccionado, nuevosDatos)
-            tablaAlumnos.refresh()
 
-            // se guarda automaticamente el archivo actuall
-            archivoActual?.let {
-                val result = viewModel.guardarAlumnosEnArchivo(it)
-                if (result.isOk) {
-                    logger.debug { "✅ Cambios guardados en archivo CSV." }
-                } else {
-                    logger.debug { "✅ Cambios guardados en archivo CSV." }
+            val resultado = viewModel.actualizarAlumno(alumnoSeleccionado, nuevosDatos)
+            if (resultado.isOk) {
+                tablaAlumnos.refresh()
+
+                archivoActual?.let {
+                    val saveResult = viewModel.guardarAlumnosEnArchivo(it)
+                    if (saveResult.isOk) {
+                        logger.debug { "✅ Cambios guardados en archivo CSV." }
+                    } else {
+                        logger.error { "❌ Error guardando archivo CSV: ${saveResult.error.message}" }
+                    }
                 }
+            } else {
+                val errorAlert = Alert(Alert.AlertType.ERROR).apply {
+                    title = "Error al actualizar"
+                    headerText = "No se pudo actualizar el alumno"
+                    contentText = resultado.error.message
+                }
+                errorAlert.showAndWait()
+                logger.error { "❌ Error actualizando alumno: ${resultado.error.message}" }
             }
         } else {
             val advertencia = Alert(Alert.AlertType.WARNING).apply {
@@ -147,10 +156,10 @@ class PantallaInicialController {
                 contentText = "Por favor, selecciona un alumno antes de guardar los cambios."
             }
             advertencia.showAndWait()
-
             logger.warn { "⚠️ No hay alumno seleccionado para guardar cambios." }
         }
     }
+
 
     @FXML
     fun onEliminarAlumnoClicked() {
@@ -163,28 +172,26 @@ class PantallaInicialController {
             }.showAndWait()
 
             if (confirmacion.isPresent && confirmacion.get() == ButtonType.OK) {
-                tablaAlumnos.items.remove(alumnoSeleccionado)
-
-                archivoActual?.let {
-                    val result = viewModel.guardarAlumnosEnArchivo(it)
-                    if (result.isOk) {
-                        logger.debug { "✅ Alumno eliminado y CSV actualizado correctamente." }
-                    } else {
-                        logger.error { "❌ Error al guardar CSV tras eliminación: ${result.error.message}" }
+                val eliminado = viewModel.eliminarAlumno(alumnoSeleccionado)
+                if (eliminado) {
+                    tablaAlumnos.refresh()
+                    archivoActual?.let {
+                        val result = viewModel.guardarAlumnosEnArchivo(it)
+                        if (result.isOk) {
+                            logger.debug { "✅ Alumno eliminado y CSV actualizado correctamente." }
+                        } else {
+                            logger.error { "❌ Error al guardar CSV tras eliminación: ${result.error.message}" }
+                        }
                     }
-                } ?: run {
-                    println("No hay archivo CSV cargado para guardar los cambios.")
                 }
             }
         } else {
-            // se muestra adertencia si no selecciona alumno
             val advertencia = Alert(Alert.AlertType.WARNING).apply {
                 title = "Advertencia"
                 headerText = "No se ha seleccionado ningún alumno"
-                contentText = "Por favor, selecciona un alumno antes de guardar los cambios."
+                contentText = "Por favor, selecciona un alumno antes de eliminar."
             }
             advertencia.showAndWait()
-
             logger.warn { "⚠️ No hay alumno seleccionado para eliminar." }
         }
     }
@@ -232,23 +239,19 @@ class PantallaInicialController {
             logger.warn { "⚠️ No se seleccionó ningún archivo para guardar." }
         }
     }
+
     @FXML
     fun onBuscarAlumno() {
         val filtro = inputBuscar.text.trim()
 
-        // condicional simple para mostrar todos los alumnos si no hay filtro
         if (filtro.isEmpty()) {
             tablaAlumnos.items = viewModel.alumnos
         } else {
             val filtroId = filtro.toIntOrNull()
-
-            // condicional simple para no mostrar nada si no se pone un numero
             if (filtroId == null) {
                 tablaAlumnos.items = FXCollections.observableArrayList()
             } else {
-                val alumnosFiltrados = viewModel.alumnos.filter {
-                    it.id == filtroId
-                }
+                val alumnosFiltrados = viewModel.alumnos.filter { it.id == filtroId }
                 tablaAlumnos.items = FXCollections.observableArrayList(alumnosFiltrados)
             }
         }
@@ -256,38 +259,9 @@ class PantallaInicialController {
 
     @FXML
     fun onCrearAlumno() {
-
-        // se crea el alumno con los datos vacios
-        val nuevoAlumno = Alumno(
-            id = generarNuevoId(),
-            nombre = "",
-            apellidos = "",
-            fechaNacimiento = "",
-            edad = 0,
-            nacionalidad = "",
-            fechaIncorporacion = "",
-            modulos = emptyList(),
-            expediente = Expediente(emptyMap(), 0.0, ""),
-            notaMedia = 0.0,
-            faltas = 0,
-            retrasos = 0,
-            partes = 0
-        )
-
-
-        viewModel.alumnos.add(nuevoAlumno)
-
-
-        tablaAlumnos.items = viewModel.alumnos
+        val nuevoAlumno = viewModel.crearAlumno()
         tablaAlumnos.selectionModel.select(nuevoAlumno)
-
         mostrarAlumno(nuevoAlumno)
-
-        logger.debug {"✅ Alumno con ID ${nuevoAlumno.id} creado con datos vacíos correctamente."}
-    }
-
-    private fun generarNuevoId(): Int {
-        val maxId = viewModel.alumnos.maxOfOrNull { it.id } ?: 0
-        return maxId + 1
+        logger.debug { "✅ Alumno con ID ${nuevoAlumno.id} creado con datos vacíos correctamente." }
     }
 }
