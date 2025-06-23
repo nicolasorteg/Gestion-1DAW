@@ -4,54 +4,289 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="219eca9b-8a84-4cf4-9c65-27d01de3b9b1" name="Changes" comment="" />
+    <list default="true" id="219eca9b-8a84-4cf4-9c65-27d01de3b9b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/nicolasorteg/gestion1daw/controllers/PantallaIncialController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/nicolasorteg/gestion1daw/controllers/PantallaIncialController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/nicolasorteg/gestion1daw/viewmodels/PantallaInicialViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/nicolasorteg/gestion1daw/viewmodels/PantallaInicialViewModel.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Gestion-1DAW" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Gestion-1DAW" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Gestion-1DAW" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "nicolasorteg"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nicolasorteg&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nicolasorteg/Gestion-1DAW.git",
-    "accountId": "0a196774-5d94-468b-acf9-c433abd4a189"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nicolasorteg/Gestion-1DAW.git&quot;,
+    &quot;accountId&quot;: &quot;0a196774-5d94-468b-acf9-c433abd4a189&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2yPiMeYh5zcdGPxbZTZfX6lWJPC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AlumnoDaoTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoDaoTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoDaoTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoMapperTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoStorageCsvTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoStorageCsvTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.AlumnoStorageCsvTest.testWriteToInvalidFile.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoValidatorTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.AlumnoValidatorTest.validateJugadorApellidoLargo.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoValidatorTest.validateJugadorEdadMayor.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlumnoValidatorTest.validateJugadorNombreLargo.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Gestion-1DAW.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExpedienteMapperTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.Gestion-1DAW [run].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HelloControllerTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HelloControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ModuloMapperTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.Tests in 'Gestion-1DAW.test'.executor&quot;: &quot;Coverage&quot;,
+    &quot;Kotlin.MainAppKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nickr/Documents/programacion/trabajos/Gestion-1DAW/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW\data" />
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW\src\test\resources" />
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW\src\main\kotlin\nicolasorteg\gestion1daw\expediente" />
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW\src\main\resources\nicolasorteg\gestion1daw\media" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW\src\main\java" />
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW\src\main\java\nicolasorteg\gestion1daw" />
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW\src\main\resources\main" />
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW" />
+      <recent name="C:\Users\nickr\Documents\programacion\trabajos\Gestion-1DAW\src\main\resources\nicolasorteg\gestion1daw\views" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="nicolasorteg.gestion1daw.common.database" />
+      <recent name="expediente.mapper" />
+      <recent name="modulo.mapper" />
+      <recent name="alumno.validator" />
+      <recent name="alumno" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'Gestion-1DAW.test'">
+    <configuration name="data.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/nicolasorteg/gestion1daw/data.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="AlumnoMapperTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;alumno.mapper.AlumnoMapperTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AlumnoStorageCsvTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;alumno.storage.AlumnoStorageCsvTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AlumnoStorageCsvTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nicolasorteg.gestion1daw.alumno.storage.AlumnoStorageCsvTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AlumnoStorageCsvTest.testWriteToInvalidFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;nicolasorteg.gestion1daw.alumno.storage.AlumnoStorageCsvTest.testWriteToInvalidFile&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'Gestion-1DAW.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'Gestion-1DAW.test'" />
+        <item itemvalue="Gradle.AlumnoStorageCsvTest (1)" />
+        <item itemvalue="Gradle.AlumnoStorageCsvTest" />
+        <item itemvalue="Gradle.AlumnoStorageCsvTest.testWriteToInvalidFile" />
+        <item itemvalue="Gradle.AlumnoMapperTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,11 +302,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749742562763</updated>
-      <workItem from="1749742563706" duration="365000" />
+      <workItem from="1749742563706" duration="7644000" />
+      <workItem from="1750085814528" duration="4518000" />
+      <workItem from="1750090793998" duration="1891000" />
+      <workItem from="1750253475720" duration="48000" />
+      <workItem from="1750256973412" duration="4793000" />
+      <workItem from="1750342322919" duration="5000" />
+      <workItem from="1750342396055" duration="11000" />
+      <workItem from="1750447757967" duration="364000" />
+      <workItem from="1750448345259" duration="12947000" />
+      <workItem from="1750471460440" duration="673000" />
+      <workItem from="1750472292204" duration="876000" />
+      <workItem from="1750473363750" duration="77000" />
+      <workItem from="1750473482328" duration="5544000" />
+      <workItem from="1750479146399" duration="2742000" />
+      <workItem from="1750526690258" duration="6000" />
+      <workItem from="1750526769194" duration="5617000" />
+      <workItem from="1750551480017" duration="8268000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Gestion_1DAW$AlumnoStorageCsvTest.ic" NAME="AlumnoStorageCsvTest Coverage Results" MODIFIED="1750529642451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Gestion_1DAW$ExpedienteMapperTest.ic" NAME="ExpedienteMapperTest Coverage Results" MODIFIED="1750475904994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Gestion_1DAW$AlumnoMapperTest__1_.ic" NAME="AlumnoMapperTest (1) Coverage Results" MODIFIED="1750478780219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Gestion_1DAW$AlumnoStorageCsvTest__1_.ic" NAME="AlumnoStorageCsvTest (1) Coverage Results" MODIFIED="1750530989587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Gestion_1DAW$Tests_in__Gestion_1DAW_test_.ic" NAME="Tests in 'Gestion-1DAW.test' Coverage Results" MODIFIED="1750553348047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Gestion_1DAW$AlumnoValidatorTest.ic" NAME="AlumnoValidatorTest Coverage Results" MODIFIED="1750474589711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Gestion_1DAW$AlumnoMapperTest.ic" NAME="AlumnoMapperTest Coverage Results" MODIFIED="1750475666288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Gestion_1DAW$ModuloMapperTest.ic" NAME="ModuloMapperTest Coverage Results" MODIFIED="1750475945559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

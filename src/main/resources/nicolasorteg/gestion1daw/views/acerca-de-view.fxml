@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="nicolasorteg.gestion1daw.common.controllers.AcercaDeController" prefWidth="450.0" prefHeight="350.0" style="-fx-background-color: #101414;">
+    <VBox spacing="15" alignment="CENTER"
+          AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+
+        <ImageView fx:id="imagenYoshiGithub" fitWidth="150" fitHeight="150">
+            <image>
+                <Image url="@../media/imagen-github.png"/>
+            </image>
+        </ImageView>
+
+        <Text fx:id="githubLinkText" text="Github" style="-fx-fill: white; -fx-underline: true; -fx-font-size: 16px;" onMouseClicked="#onGithubClicked"/>
+    </VBox>
+</AnchorPane>
