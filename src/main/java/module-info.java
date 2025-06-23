@@ -2,9 +2,11 @@ module nicolasorteg.gestion1daw {
 
     // requisitos base
     requires javafx.controls;
+    requires javafx.graphics;
     requires javafx.fxml;
     requires kotlin.stdlib;
     requires java.desktop;
+
     // result
     requires kotlin.result.jvm;
     // Logger
@@ -14,6 +16,16 @@ module nicolasorteg.gestion1daw {
     requires org.jdbi.v3.sqlobject.kotlin;
     requires org.jdbi.v3.sqlobject;
     requires org.jdbi.v3.core;
+    requires org.jdbi.v3.kotlin;
+
+    //koin
+    requires koin.core.jvm;
+    requires io.leangen.geantyref;
+
+
+    requires java.sql;
+    requires com.h2database;
+    requires kotlin.reflect;
 
     // fxml
     opens nicolasorteg.gestion1daw to javafx.fxml;
