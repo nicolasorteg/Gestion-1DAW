@@ -1,0 +1,283 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoDao///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-dao/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoDao/delete/#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-dao/delete.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoDao/deleteAll/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-dao/delete-all.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoDao/findAll/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-dao/find-all.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoDao/findById/#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-dao/find-by-id.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoDao/save/#nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-dao/save.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoDao/update/#nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-dao/update.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/AlumnoEntity/#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.String#kotlin.String#kotlin.collections.List[nicolasorteg.gestion1daw.modulo.dao.ModuloEntity]#nicolasorteg.gestion1daw.expediente.dao.ExpedienteEntity#kotlin.Double#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/-alumno-entity.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/apellidos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/apellidos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/edad/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/edad.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/expediente/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/expediente.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/faltas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/faltas.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/fechaIncorporacion/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/fecha-incorporacion.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/fechaNacimiento/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/fecha-nacimiento.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/id/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/id.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/modulos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/modulos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/nacionalidad/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/nacionalidad.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/nombre/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/nombre.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/notaMedia/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/nota-media.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/partes/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/partes.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dao/AlumnoEntity/retrasos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dao/-alumno-entity/retrasos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/AlumnoDto/#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.String#kotlin.String#kotlin.collections.List[nicolasorteg.gestion1daw.modulo.dto.ModuloDto]#nicolasorteg.gestion1daw.expediente.dto.ExpedienteDto#kotlin.Double#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/-alumno-dto.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/apellidos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/apellidos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/edad/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/edad.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/expediente/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/expediente.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/faltas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/faltas.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/fechaIncorporacion/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/fecha-incorporacion.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/fechaNacimiento/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/fecha-nacimiento.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/id/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/id.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/modulos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/modulos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/nacionalidad/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/nacionalidad.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/nombre/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/nombre.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/notaMedia/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/nota-media.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/partes/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/partes.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.dto/AlumnoDto/retrasos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.dto/-alumno-dto/retrasos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoDatabaseException///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-database-exception/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoDatabaseException/AlumnoDatabaseException/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-database-exception/-alumno-database-exception.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoIdNotFound///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-id-not-found/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoIdNotFound/AlumnoIdNotFound/#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-id-not-found/-alumno-id-not-found.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoServiceException///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-service-exception/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoServiceException/AlumnoServiceException/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-service-exception/-alumno-service-exception.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoStorageError///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-storage-error/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoStorageError/AlumnoStorageError/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-storage-error/-alumno-storage-error.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoValidatorError///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-validator-error/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError.AlumnoValidatorError/AlumnoValidatorError/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/-alumno-validator-error/-alumno-validator-error.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.error/AlumnoError/message/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.error/-alumno-error/message.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.mappers////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.mappers/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.mappers//toDto/nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.mappers/to-dto.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.mappers//toDto/nicolasorteg.gestion1daw.alumno.models.Alumno#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.mappers/to-dto.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.mappers//toEntity/nicolasorteg.gestion1daw.alumno.dto.AlumnoDto#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.mappers/to-entity.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.mappers//toEntity/nicolasorteg.gestion1daw.alumno.models.Alumno#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.mappers/to-entity.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.mappers//toModel/nicolasorteg.gestion1daw.alumno.dao.AlumnoEntity#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.mappers/to-model.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.mappers//toModel/nicolasorteg.gestion1daw.alumno.dto.AlumnoDto#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.mappers/to-model.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/Alumno/#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.String#kotlin.String#kotlin.collections.List[nicolasorteg.gestion1daw.modulo.model.Modulo]#nicolasorteg.gestion1daw.expediente.model.Expediente#kotlin.Double#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/-alumno.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/expediente/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/expediente.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/faltas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/faltas.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/fechaIncorporacion/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/fecha-incorporacion.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/modulos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/modulos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/nombreCompleto/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/nombre-completo.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/notaMedia/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/nota-media.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/partes/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/partes.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/retrasos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/retrasos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Alumno/toString/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-alumno/to-string.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Persona///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-persona/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Persona/Persona/#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-persona/-persona.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Persona/apellidos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-persona/apellidos.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Persona/edad/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-persona/edad.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Persona/fechaNacimiento/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-persona/fecha-nacimiento.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Persona/id/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-persona/id.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Persona/nacionalidad/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-persona/nacionalidad.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.models/Persona/nombre/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.models/-persona/nombre.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepository///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepository/delete/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository/delete.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepository/getAll/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository/get-all.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepository/getById/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository/get-by-id.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepository/save/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository/save.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepository/update/#TypeParam(bounds=[kotlin.Any?])#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository/update.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepositoryImpl///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository-impl/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepositoryImpl/AlumnoRepositoryImpl/#nicolasorteg.gestion1daw.alumno.dao.AlumnoDao/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository-impl/-alumno-repository-impl.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepositoryImpl/delete/#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository-impl/delete.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepositoryImpl/getAll/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository-impl/get-all.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepositoryImpl/getById/#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository-impl/get-by-id.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepositoryImpl/save/#nicolasorteg.gestion1daw.alumno.models.Alumno/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository-impl/save.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.repository/AlumnoRepositoryImpl/update/#nicolasorteg.gestion1daw.alumno.models.Alumno#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.repository/-alumno-repository-impl/update.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoService///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoService/loadFromCsv/#java.io.File/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service/load-from-csv.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoService/saveToCsv/#java.io.File/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service/save-to-csv.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl/AlumnoServiceImpl/#nicolasorteg.gestion1daw.alumno.repository.AlumnoRepositoryImpl#nicolasorteg.gestion1daw.alumno.validator.AlumnoValidator#nicolasorteg.gestion1daw.alumno.storage.AlumnoStorageCsv/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/-alumno-service-impl.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl/delete/#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/delete.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl/getAll/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/get-all.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl/getByID/#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/get-by-i-d.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl/loadFromCsv/#java.io.File/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/load-from-csv.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl/save/#nicolasorteg.gestion1daw.alumno.models.Alumno/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/save.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl/saveToCsv/#java.io.File/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/save-to-csv.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.service/AlumnoServiceImpl/update/#kotlin.Int#nicolasorteg.gestion1daw.alumno.models.Alumno/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.service/-alumno-service-impl/update.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.storage////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.storage/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.storage/AlumnoStorage///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.storage/-alumno-storage/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.storage/AlumnoStorage/readFromFile/#java.io.File/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.storage/-alumno-storage/read-from-file.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.storage/AlumnoStorage/writeToFile/#java.io.File#kotlin.collections.List[nicolasorteg.gestion1daw.alumno.models.Alumno]/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.storage/-alumno-storage/write-to-file.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.storage/AlumnoStorageCsv///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.storage/-alumno-storage-csv/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.storage/AlumnoStorageCsv/AlumnoStorageCsv/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.storage/-alumno-storage-csv/-alumno-storage-csv.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.storage/AlumnoStorageCsv/readFromFile/#java.io.File/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.storage/-alumno-storage-csv/read-from-file.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.storage/AlumnoStorageCsv/writeToFile/#java.io.File#kotlin.collections.List[nicolasorteg.gestion1daw.alumno.models.Alumno]/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.storage/-alumno-storage-csv/write-to-file.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.validator////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.validator/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.validator/AlumnoValidator///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.validator/-alumno-validator/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.validator/AlumnoValidator/AlumnoValidator/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.validator/-alumno-validator/-alumno-validator.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.validator/AlumnoValidator/validate/#nicolasorteg.gestion1daw.alumno.models.Alumno/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.validator/-alumno-validator/validate.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.validator/Validator///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.validator/-validator/index.html
+$dokka.location:nicolasorteg.gestion1daw.alumno.validator/Validator/validate/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.alumno.validator/-validator/validate.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/AcercaDeController///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-acerca-de-controller/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/AcercaDeController/AcercaDeController/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-acerca-de-controller/-acerca-de-controller.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController/PantallaInicialController/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/-pantalla-inicial-controller.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController/initialize/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/initialize.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController/onBuscarAlumno/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/on-buscar-alumno.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController/onCrearAlumno/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/on-crear-alumno.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController/onEliminarAlumnoClicked/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/on-eliminar-alumno-clicked.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController/onExportarAlumnosClicked/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/on-exportar-alumnos-clicked.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController/onGuardarCambiosClicked/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/on-guardar-cambios-clicked.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/PantallaInicialController/onImportarAlumnosClicked/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-pantalla-inicial-controller/on-importar-alumnos-clicked.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/RegisterController///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-register-controller/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/RegisterController/RegisterController/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-register-controller/-register-controller.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/RegisterController/initialize/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-register-controller/initialize.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/SplashScreenController///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-splash-screen-controller/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/SplashScreenController/SplashScreenController/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-splash-screen-controller/-splash-screen-controller.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/SplashScreenController/initialize/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-splash-screen-controller/initialize.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/SplashScreenController/mensajeCarga/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-splash-screen-controller/mensaje-carga.html
+$dokka.location:nicolasorteg.gestion1daw.common.controllers/SplashScreenController/progressBar/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.controllers/-splash-screen-controller/progress-bar.html
+$dokka.location:nicolasorteg.gestion1daw.common.database////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.database/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.database/JdbiManager///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.database/-jdbi-manager/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.database/JdbiManager/JdbiManager/#kotlin.String#kotlin.Boolean#kotlin.Boolean#kotlin.Boolean/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.database/-jdbi-manager/-jdbi-manager.html
+$dokka.location:nicolasorteg.gestion1daw.common.database/JdbiManager/executeSqlScript/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.database/-jdbi-manager/execute-sql-script.html
+$dokka.location:nicolasorteg.gestion1daw.common.database/JdbiManager/executeSqlScriptFromResources/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.database/-jdbi-manager/execute-sql-script-from-resources.html
+$dokka.location:nicolasorteg.gestion1daw.common.database/JdbiManager/jdbi/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.database/-jdbi-manager/jdbi.html
+$dokka.location:nicolasorteg.gestion1daw.common.service////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.service/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.service/Service///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.service/-service/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.service/Service/delete/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.service/-service/delete.html
+$dokka.location:nicolasorteg.gestion1daw.common.service/Service/getAll/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.service/-service/get-all.html
+$dokka.location:nicolasorteg.gestion1daw.common.service/Service/getByID/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.service/-service/get-by-i-d.html
+$dokka.location:nicolasorteg.gestion1daw.common.service/Service/save/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.service/-service/save.html
+$dokka.location:nicolasorteg.gestion1daw.common.service/Service/update/#TypeParam(bounds=[kotlin.Any?])#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.service/-service/update.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/AcercaDeViewModel///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-acerca-de-view-model/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/AcercaDeViewModel/AcercaDeViewModel/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-acerca-de-view-model/-acerca-de-view-model.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/AcercaDeViewModel/openGithub/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-acerca-de-view-model/open-github.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel/PantallaInicialViewModel/#nicolasorteg.gestion1daw.alumno.service.AlumnoService/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/-pantalla-inicial-view-model.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel/abrirAcercaDe/#javafx.stage.Stage/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/abrir-acerca-de.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel/actualizarAlumno/#nicolasorteg.gestion1daw.alumno.models.Alumno#nicolasorteg.gestion1daw.alumno.models.Alumno/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/actualizar-alumno.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel/alumnos/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/alumnos.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel/cargarAlumnosDesdeArchivo/#java.io.File/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/cargar-alumnos-desde-archivo.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel/crearAlumno/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/crear-alumno.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel/eliminarAlumno/#nicolasorteg.gestion1daw.alumno.models.Alumno/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/eliminar-alumno.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/PantallaInicialViewModel/guardarAlumnosEnArchivo/#java.io.File/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-pantalla-inicial-view-model/guardar-alumnos-en-archivo.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/RegisterViewModel///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-register-view-model/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/RegisterViewModel/RegisterViewModel/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-register-view-model/-register-view-model.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/RegisterViewModel/getPassword/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-register-view-model/get-password.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/RegisterViewModel/getUsername/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-register-view-model/get-username.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/RegisterViewModel/passwordProperty/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-register-view-model/password-property.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/RegisterViewModel/usernameProperty/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-register-view-model/username-property.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/RegisterViewModel/validateCredentials/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-register-view-model/validate-credentials.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/SplashScreenViewModel///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-splash-screen-view-model/index.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/SplashScreenViewModel/SplashScreenViewModel/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-splash-screen-view-model/-splash-screen-view-model.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/SplashScreenViewModel/mensajeProperty/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-splash-screen-view-model/mensaje-property.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/SplashScreenViewModel/progressProperty/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-splash-screen-view-model/progress-property.html
+$dokka.location:nicolasorteg.gestion1daw.common.viewmodels/SplashScreenViewModel/startLoading/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.common.viewmodels/-splash-screen-view-model/start-loading.html
+$dokka.location:nicolasorteg.gestion1daw.di////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.di/index.html
+$dokka.location:nicolasorteg.gestion1daw.di//appModule/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.di/app-module.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dao////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dao/index.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dao/ExpedienteEntity///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dao/-expediente-entity/index.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dao/ExpedienteEntity/ExpedienteEntity/#kotlin.collections.Map[kotlin.String,kotlin.Double]#kotlin.Double#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dao/-expediente-entity/-expediente-entity.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dao/ExpedienteEntity/calificaciones/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dao/-expediente-entity/calificaciones.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dao/ExpedienteEntity/notaMedia/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dao/-expediente-entity/nota-media.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dao/ExpedienteEntity/observaciones/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dao/-expediente-entity/observaciones.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dto////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dto/index.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dto/ExpedienteDto///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dto/-expediente-dto/index.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dto/ExpedienteDto/ExpedienteDto/#kotlin.collections.Map[kotlin.String,kotlin.Double]#kotlin.Double#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dto/-expediente-dto/-expediente-dto.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dto/ExpedienteDto/calificaciones/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dto/-expediente-dto/calificaciones.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dto/ExpedienteDto/notaMedia/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dto/-expediente-dto/nota-media.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.dto/ExpedienteDto/observaciones/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.dto/-expediente-dto/observaciones.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.mapper////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.mapper/index.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.mapper//toDto/nicolasorteg.gestion1daw.expediente.dao.ExpedienteEntity#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.mapper/to-dto.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.mapper//toDto/nicolasorteg.gestion1daw.expediente.model.Expediente#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.mapper/to-dto.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.mapper//toEntity/nicolasorteg.gestion1daw.expediente.dto.ExpedienteDto#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.mapper/to-entity.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.mapper//toEntity/nicolasorteg.gestion1daw.expediente.model.Expediente#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.mapper/to-entity.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.mapper//toModel/nicolasorteg.gestion1daw.expediente.dao.ExpedienteEntity#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.mapper/to-model.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.mapper//toModel/nicolasorteg.gestion1daw.expediente.dto.ExpedienteDto#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.mapper/to-model.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.model////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.model/index.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.model/Expediente///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.model/-expediente/index.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.model/Expediente/Expediente/#kotlin.collections.Map[kotlin.String,kotlin.Double]#kotlin.Double#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.model/-expediente/-expediente.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.model/Expediente/calificaciones/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.model/-expediente/calificaciones.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.model/Expediente/notaMedia/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.model/-expediente/nota-media.html
+$dokka.location:nicolasorteg.gestion1daw.expediente.model/Expediente/observaciones/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.expediente.model/-expediente/observaciones.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dao////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dao/index.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dao/ModuloEntity///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dao/-modulo-entity/index.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dao/ModuloEntity/ModuloEntity/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dao/-modulo-entity/-modulo-entity.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dao/ModuloEntity/horas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dao/-modulo-entity/horas.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dao/ModuloEntity/nombre/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dao/-modulo-entity/nombre.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dao/ModuloEntity/siglas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dao/-modulo-entity/siglas.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dto////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dto/index.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dto/ModuloDto///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dto/-modulo-dto/index.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dto/ModuloDto/ModuloDto/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dto/-modulo-dto/-modulo-dto.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dto/ModuloDto/horas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dto/-modulo-dto/horas.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dto/ModuloDto/nombre/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dto/-modulo-dto/nombre.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.dto/ModuloDto/siglas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.dto/-modulo-dto/siglas.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.mapper////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.mapper/index.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.mapper//toDto/nicolasorteg.gestion1daw.modulo.dao.ModuloEntity#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.mapper/to-dto.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.mapper//toDto/nicolasorteg.gestion1daw.modulo.model.Modulo#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.mapper/to-dto.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.mapper//toEntity/nicolasorteg.gestion1daw.modulo.dto.ModuloDto#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.mapper/to-entity.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.mapper//toEntity/nicolasorteg.gestion1daw.modulo.model.Modulo#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.mapper/to-entity.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.mapper//toModel/nicolasorteg.gestion1daw.modulo.dao.ModuloEntity#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.mapper/to-model.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.mapper//toModel/nicolasorteg.gestion1daw.modulo.dto.ModuloDto#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.mapper/to-model.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.model////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.model/index.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.model/Modulo///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.model/-modulo/index.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.model/Modulo/Modulo/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.model/-modulo/-modulo.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.model/Modulo/horas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.model/-modulo/horas.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.model/Modulo/nombre/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.model/-modulo/nombre.html
+$dokka.location:nicolasorteg.gestion1daw.modulo.model/Modulo/siglas/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.modulo.model/-modulo/siglas.html
+$dokka.location:nicolasorteg.gestion1daw.routes////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/index.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas.ACERCA_DE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/-a-c-e-r-c-a_-d-e/index.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas.PANTALLA_INICIAL///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/-p-a-n-t-a-l-l-a_-i-n-i-c-i-a-l/index.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas.REGISTER///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/-r-e-g-i-s-t-e-r/index.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas.SPLASH///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/-s-p-l-a-s-h/index.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/index.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas/entries/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/entries.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas/path/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/path.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas/valueOf/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/value-of.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager.Vistas/values/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/-vistas/values.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/index.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager/activeStage/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/active-stage.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager/app/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/app.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager/getResource/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/get-resource.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager/getResourceAsStream/#kotlin.String/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/get-resource-as-stream.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager/initAcercaDeStage/#javafx.stage.Stage/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/init-acerca-de-stage.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager/initPantallaInicialStage/#javafx.stage.Stage/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/init-pantalla-inicial-stage.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager/initRegisterStage/#javafx.stage.Stage/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/init-register-stage.html
+$dokka.location:nicolasorteg.gestion1daw.routes/RoutesManager/initSplashStage/#javafx.stage.Stage/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw.routes/-routes-manager/init-splash-stage.html
+$dokka.location:nicolasorteg.gestion1daw////PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw/index.html
+$dokka.location:nicolasorteg.gestion1daw//main/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw/main.html
+$dokka.location:nicolasorteg.gestion1daw/MainApp///PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw/-main-app/index.html
+$dokka.location:nicolasorteg.gestion1daw/MainApp/MainApp/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw/-main-app/-main-app.html
+$dokka.location:nicolasorteg.gestion1daw/MainApp/init/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw/-main-app/init.html
+$dokka.location:nicolasorteg.gestion1daw/MainApp/start/#javafx.stage.Stage/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw/-main-app/start.html
+$dokka.location:nicolasorteg.gestion1daw/MainApp/stop/#/PointingToDeclaration/-gestion-1-d-a-w/nicolasorteg.gestion1daw/-main-app/stop.html
+nicolasorteg.gestion1daw
+nicolasorteg.gestion1daw.alumno.dao
+nicolasorteg.gestion1daw.alumno.dto
+nicolasorteg.gestion1daw.alumno.error
+nicolasorteg.gestion1daw.alumno.mappers
+nicolasorteg.gestion1daw.alumno.models
+nicolasorteg.gestion1daw.alumno.repository
+nicolasorteg.gestion1daw.alumno.service
+nicolasorteg.gestion1daw.alumno.storage
+nicolasorteg.gestion1daw.alumno.validator
+nicolasorteg.gestion1daw.common.controllers
+nicolasorteg.gestion1daw.common.database
+nicolasorteg.gestion1daw.common.service
+nicolasorteg.gestion1daw.common.viewmodels
+nicolasorteg.gestion1daw.di
+nicolasorteg.gestion1daw.expediente.dao
+nicolasorteg.gestion1daw.expediente.dto
+nicolasorteg.gestion1daw.expediente.mapper
+nicolasorteg.gestion1daw.expediente.model
+nicolasorteg.gestion1daw.modulo.dao
+nicolasorteg.gestion1daw.modulo.dto
+nicolasorteg.gestion1daw.modulo.mapper
+nicolasorteg.gestion1daw.modulo.model
+nicolasorteg.gestion1daw.routes
+
